@@ -387,10 +387,10 @@
 						<dict>
 							<key>Command</key>
 							<data>
-							AYcHJQ==
+							AYcHJA==
 							</data>
 							<key>Comment</key>
-							<string>0x18 SET_PIN_WIDGET_CONTROL 0x25</string>
+							<string>0x18 SET_PIN_WIDGET_CONTROL 0x24</string>
 							<key>On Init</key>
 							<true/>
 							<key>On Sleep</key>
@@ -401,10 +401,10 @@
 						<dict>
 							<key>Command</key>
 							<data>
-							AhcIgw==
+							AhcIgg==
 							</data>
 							<key>Comment</key>
-							<string>0x21 SET_UNSOLICITED_ENABLE 0x83</string>
+							<string>0x21 SET_UNSOLICITED_ENABLE 0x82</string>
 							<key>On Init</key>
 							<true/>
 							<key>On Sleep</key>

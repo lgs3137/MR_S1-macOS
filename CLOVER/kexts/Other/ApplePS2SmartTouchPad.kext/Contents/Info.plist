@@ -510,7 +510,7 @@
 			<key>CFBundleIdentifier</key>
 			<string>org.emlydinesh.driver.ApplePS2SmartTouchPad</string>
 			<key>Debug Level</key>
-			<integer>16</integer>
+			<integer>0</integer>
 			<key>FocalTechNameMatch</key>
 			<array>
 				<string>FLT0101</string>
@@ -866,7 +866,7 @@
 				<key>Buttons</key>
 				<dict>
 					<key>2FingersClickAction</key>
-					<integer>2</integer>
+					<integer>33</integer>
 					<key>ClickpadVirtualButtons</key>
 					<true/>
 					<key>ClickpadVirtualButtonsArea</key>
@@ -942,7 +942,7 @@
 					<key>TimeOutEnablesTPadAfterAccInput</key>
 					<integer>1000</integer>
 					<key>TriggerAccInputForKeyPressCount</key>
-					<integer>2</integer>
+					<integer>1</integer>
 				</dict>
 				<key>Mouse</key>
 				<dict>
@@ -1370,13 +1370,13 @@
 					<key>1FingerTapAction</key>
 					<integer>35</integer>
 					<key>2FingersTapAction</key>
-					<integer>34</integer>
-					<key>3FingersTapAction</key>
 					<integer>33</integer>
+					<key>3FingersTapAction</key>
+					<integer>15</integer>
 					<key>4FingersTapAction</key>
-					<integer>32</integer>
+					<integer>34</integer>
 					<key>5FingersTapAction</key>
-					<integer>31</integer>
+					<integer>10</integer>
 					<key>CornerTapAreaHeight</key>
 					<integer>10</integer>
 					<key>CornerTapAreaLength</key>

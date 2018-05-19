@@ -42,6 +42,8 @@
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>org.emlydinesh.driver.ApplePS2Keyboard</string>
+			<key>Debug</key>
+			<false/>
 			<key>Extended Functions</key>
 			<dict>
 				<key>F13</key>
@@ -72,9 +74,9 @@
 			<key>Fn Keys Mode 1</key>
 			<dict>
 				<key>BrightnessDown</key>
-				<string>F4</string>
+				<string>ArrowDown</string>
 				<key>BrightnessUp</key>
-				<string>F5</string>
+				<string>ArrowUp</string>
 				<key>KBBacklightDown</key>
 				<string>disable</string>
 				<key>KBBacklightUp</key>
@@ -82,11 +84,11 @@
 				<key>Launchpad</key>
 				<string>disable</string>
 				<key>MediaNext</key>
-				<string>ArrowRight</string>
+				<string>disable</string>
 				<key>MediaPlayPause</key>
-				<string>ArrowDown</string>
+				<string>disable</string>
 				<key>MediaPrevious</key>
-				<string>ArrowLeft</string>
+				<string>disable</string>
 				<key>Misson Control</key>
 				<string>F8</string>
 				<key>SleepDisplay</key>
@@ -96,18 +98,18 @@
 				<key>VideoMirror</key>
 				<string>F6</string>
 				<key>VolumeDown</key>
-				<string>F2</string>
+				<string>ArrowLeft</string>
 				<key>VolumeMute</key>
 				<string>F1</string>
 				<key>VolumeUp</key>
-				<string>F3</string>
+				<string>ArrowRight</string>
 			</dict>
 			<key>Fn Keys Mode 2</key>
 			<dict>
 				<key>BrightnessDown</key>
-				<string>F4</string>
+				<string>ArrowDown</string>
 				<key>BrightnessUp</key>
-				<string>F5</string>
+				<string>ArrowUp</string>
 				<key>KBBacklightDown</key>
 				<string>disable</string>
 				<key>KBBacklightUp</key>
@@ -115,11 +117,11 @@
 				<key>Launchpad</key>
 				<string>disable</string>
 				<key>MediaNext</key>
-				<string>ArrowRight</string>
+				<string>disable</string>
 				<key>MediaPlayPause</key>
-				<string>ArrowDown</string>
+				<string>disable</string>
 				<key>MediaPrevious</key>
-				<string>ArrowLeft</string>
+				<string>disable</string>
 				<key>Misson Control</key>
 				<string>F8</string>
 				<key>SleepDisplay</key>
@@ -131,11 +133,11 @@
 				<key>VideoMirror</key>
 				<string>F6</string>
 				<key>VolumeDown</key>
-				<string>F2</string>
+				<string>ArrowLeft</string>
 				<key>VolumeMute</key>
 				<string>F1</string>
 				<key>VolumeUp</key>
-				<string>F3</string>
+				<string>ArrowRight</string>
 			</dict>
 			<key>Fn keys Layout</key>
 			<string>ASUS</string>
@@ -176,7 +178,7 @@
 				<key>Make shift + caps into Fn key</key>
 				<true/>
 				<key>Num Lock enabled at boot</key>
-				<false/>
+				<true/>
 				<key>Swap alt and windows key</key>
 				<false/>
 			</dict>
