@@ -25,6 +25,9 @@
 
 ## Change Log:
 
+- 2018.05.19
+	- Update Clover & Hotpatch & Kext & config.plist.
+
 - 2018.05.13
 	- High Sierra Clover EFI uploaded on Git.
 
