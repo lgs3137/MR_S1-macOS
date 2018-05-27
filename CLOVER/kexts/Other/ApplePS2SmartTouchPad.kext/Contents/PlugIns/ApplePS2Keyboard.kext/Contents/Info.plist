@@ -42,34 +42,32 @@
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>org.emlydinesh.driver.ApplePS2Keyboard</string>
-			<key>Debug</key>
-			<false/>
 			<key>Extended Functions</key>
 			<dict>
 				<key>F13</key>
-				<string>ALT CMD ESC</string>
+				<string>HOME</string>
 				<key>F14</key>
-				<string></string>
+				<string>CMD [</string>
 				<key>F15</key>
-				<string></string>
+				<string>CMD ]</string>
 				<key>F16</key>
-				<string>ALT CMD D</string>
+				<string>END</string>
 				<key>F17</key>
-				<string>CTRL DAW</string>
-				<key>F18</key>
-				<string>CTRL UAW</string>
-				<key>F19</key>
-				<string>CTRL LAW</string>
-				<key>F20</key>
-				<string>CTRL RAW</string>
-				<key>F21</key>
-				<string></string>
-				<key>F22</key>
-				<string></string>
-				<key>F23</key>
-				<string>CMD Q</string>
-				<key>F24</key>
 				<string>CMD H</string>
+				<key>F18</key>
+				<string>ALT CMD ArrowLeft</string>
+				<key>F19</key>
+				<string>ALT CMD ArrowRight</string>
+				<key>F20</key>
+				<string>CMD W</string>
+				<key>F21</key>
+				<string>CTRL 8</string>
+				<key>F22</key>
+				<string>CTRL 9</string>
+				<key>F23</key>
+				<string></string>
+				<key>F24</key>
+				<string></string>
 			</dict>
 			<key>Fn Keys Mode 1</key>
 			<dict>
@@ -82,25 +80,25 @@
 				<key>KBBacklightUp</key>
 				<string>disable</string>
 				<key>Launchpad</key>
-				<string>disable</string>
+				<string>F4</string>
 				<key>MediaNext</key>
-				<string>disable</string>
-				<key>MediaPlayPause</key>
-				<string>disable</string>
-				<key>MediaPrevious</key>
-				<string>disable</string>
-				<key>Misson Control</key>
-				<string>F8</string>
-				<key>SleepDisplay</key>
-				<string>disable</string>
-				<key>Touchpad</key>
 				<string>F9</string>
+				<key>MediaPlayPause</key>
+				<string>F8</string>
+				<key>MediaPrevious</key>
+				<string>F7</string>
+				<key>Misson Control</key>
+				<string>F1</string>
+				<key>SleepDisplay</key>
+				<string>F5</string>
+				<key>Touchpad</key>
+				<string>disable</string>
 				<key>VideoMirror</key>
 				<string>F6</string>
 				<key>VolumeDown</key>
 				<string>ArrowLeft</string>
 				<key>VolumeMute</key>
-				<string>F1</string>
+				<string>F11</string>
 				<key>VolumeUp</key>
 				<string>ArrowRight</string>
 			</dict>
@@ -115,7 +113,7 @@
 				<key>KBBacklightUp</key>
 				<string>disable</string>
 				<key>Launchpad</key>
-				<string>disable</string>
+				<string>F7</string>
 				<key>MediaNext</key>
 				<string>disable</string>
 				<key>MediaPlayPause</key>
@@ -123,15 +121,15 @@
 				<key>MediaPrevious</key>
 				<string>disable</string>
 				<key>Misson Control</key>
-				<string>F8</string>
+				<string>disable</string>
 				<key>SleepDisplay</key>
 				<string>disable</string>
 				<key>SystemSleep</key>
 				<string>disable</string>
 				<key>Touchpad</key>
-				<string>F9</string>
+				<string>F3</string>
 				<key>VideoMirror</key>
-				<string>F6</string>
+				<string>F2</string>
 				<key>VolumeDown</key>
 				<string>ArrowLeft</string>
 				<key>VolumeMute</key>
@@ -178,7 +176,7 @@
 				<key>Make shift + caps into Fn key</key>
 				<true/>
 				<key>Num Lock enabled at boot</key>
-				<true/>
+				<false/>
 				<key>Swap alt and windows key</key>
 				<false/>
 			</dict>

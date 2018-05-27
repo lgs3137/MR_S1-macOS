@@ -217,7 +217,7 @@
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
-			<integer>3</integer>
+			<integer>66</integer>
 			<key>ResetHDA</key>
 			<true/>
 		</dict>
@@ -274,7 +274,7 @@
 		<key>ScreenResolution</key>
 		<string>1920x1080</string>
 		<key>Theme</key>
-		<string>SimpleThemeDark</string>
+		<string>MECHREVO</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
