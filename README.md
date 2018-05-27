@@ -6,7 +6,7 @@
 * Working
   * CPU
   * GPU acceleration (Disable Nvidia MX150)
-  * Audio (defective)
+  * Audio (ALC298)
   * SSD
   * USB (A & C)
   * HDMI
@@ -24,6 +24,9 @@
 - [daliansky](https://github.com/daliansky) 
 
 ## Change Log:
+
+- 2018.05.27
+	- Update Clover & Hotpatch & Kext & config.plist.
 
 - 2018.05.19
 	- Update Clover & Hotpatch & Kext & config.plist.
