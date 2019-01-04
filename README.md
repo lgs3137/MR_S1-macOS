@@ -14,9 +14,7 @@
   * Touchpad
   * Webcam
   * Bluetooth
-
-* Non-working
-   * WIFI never
+  * WIFI (Broadcom BCM94352z)
 
 ## Credits
 
