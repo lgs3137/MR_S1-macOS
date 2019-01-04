@@ -17,6 +17,7 @@
 
 * Non-working
    * WIFI never
+- [Switch to Broadcom BCM94352z/DW1560](https://github.com/lgs3137/MR_S1-macOS/tree/BCM94352z) 
 
 ## Credits
 
