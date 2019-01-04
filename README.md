@@ -25,6 +25,9 @@
 
 ## Change Log:
 
+- 2019.01.04
+	- Update Clover & Hotpatch & Kext & config.plist for macOS Mojave 10.14.2.
+
 - 2018.05.27
 	- Update Clover & Hotpatch & Kext & config.plist.
 

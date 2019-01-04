@@ -5,30 +5,29 @@
 	<key>ACPI</key>
 	<dict>
 		<key>AutoMerge</key>
-		<false/>
+		<true/>
+		<key>FixHeaders</key>
+		<true/>
 		<key>DSDT</key>
 		<dict>
+			<key>DropOEM_DSM</key>
+			<false/>
+			<key>Fixes</key>
+			<dict>
+				<key>AddDTGP</key>
+				<true/>
+				<key>AddMCHC</key>
+				<true/>
+				<key>FixTMR</key>
+				<true/>
+				<key>FixADP1</key>
+				<true/>
+			</dict>
 			<key>Patches</key>
 			<array>
 				<dict>
 					<key>Comment</key>
-					<string>change _DSM to XSDM</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					X0RTTQ==
-					</data>
-					<key>Replace</key>
-					<data>
-					WERTTQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>change _OSI to XOSI</string>
-					<key>Disabled</key>
-					<false/>
 					<key>Find</key>
 					<data>
 					X09TSQ==
@@ -40,9 +39,19 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
+					<string>change _DSM to XDSM</string>
+					<key>Find</key>
+					<data>
+					X0RTTQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					WERTTQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
 					<string>change HDAS to HDEF</string>
-					<key>Disabled</key>
-					<false/>
 					<key>Find</key>
 					<data>
 					SERBUw==
@@ -55,8 +64,6 @@
 				<dict>
 					<key>Comment</key>
 					<string>change HECI to IMEI</string>
-					<key>Disabled</key>
-					<false/>
 					<key>Find</key>
 					<data>
 					SEVDSQ==
@@ -69,8 +76,6 @@
 				<dict>
 					<key>Comment</key>
 					<string>change GFX0 to IGPU</string>
-					<key>Disabled</key>
-					<false/>
 					<key>Find</key>
 					<data>
 					R0ZYMA==
@@ -83,8 +88,6 @@
 				<dict>
 					<key>Comment</key>
 					<string>change SAT0 to SATA</string>
-					<key>Disabled</key>
-					<false/>
 					<key>Find</key>
 					<data>
 					U0FUMA==
@@ -96,23 +99,7 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change ADBG to XDBG</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					QURCRwk=
-					</data>
-					<key>Replace</key>
-					<data>
-					WERCRwk=
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>change Method(_PTS,1,N) to ZPTS</string>
-					<key>Disabled</key>
-					<false/>
 					<key>Find</key>
 					<data>
 					X1BUUwE=
@@ -125,8 +112,6 @@
 				<dict>
 					<key>Comment</key>
 					<string>change Method(_WAK,1,S) to ZWAK</string>
-					<key>Disabled</key>
-					<false/>
 					<key>Find</key>
 					<data>
 					X1dBSwE=
@@ -139,8 +124,6 @@
 				<dict>
 					<key>Comment</key>
 					<string>change Method(GPRW,2,N) to XPRW</string>
-					<key>Disabled</key>
-					<false/>
 					<key>Find</key>
 					<data>
 					R1BSVwI=
@@ -150,37 +133,33 @@
 					WFBSVwI=
 					</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change MATH._STA and LDR2._STA to XSTA</string>
+					<key>Find</key>
+					<data>
+					X1NUQQCgDZNQ
+					</data>
+					<key>Replace</key>
+					<data>
+					WFNUQQCgDZNQ
+					</data>
+				</dict>
 			</array>
 		</dict>
 		<key>DropTables</key>
 		<array>
 			<dict>
 				<key>Signature</key>
-				<string>#MCFG</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
 				<string>DMAR</string>
 			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>xh_rvp10</string>
-			</dict>
 		</array>
-		<key>FixHeaders</key>
-		<false/>
 		<key>SSDT</key>
 		<dict>
 			<key>DropOem</key>
 			<false/>
 			<key>Generate</key>
 			<dict>
-				<key>APLF</key>
-				<true/>
-				<key>APSN</key>
-				<true/>
 				<key>PluginType</key>
 				<true/>
 			</dict>
@@ -191,25 +170,20 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>shikigva=1 abm_firstpolldelay=10000 igfxrst=1 -disablegfxfirmware darkwake=no igfxfw=1</string>
+		<string>igfxrst=1 -cdfon</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
-		<key>DisableCloverHotkeys</key>
-		<true/>
 		<key>Legacy</key>
 		<string>PBR</string>
-		<key>NeverHibernate</key>
-		<false/>
 		<key>NoEarlyProgress</key>
 		<true/>
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
-		<integer>5</integer>
-	</dict>
-	<key>CPU</key>
-	<dict>
-		<key>UseARTFrequency</key>
+		<integer>3</integer>
+		<key>HibernationFixup</key>
+		<true/>
+		<key>RtcHibernateAware</key>
 		<true/>
 	</dict>
 	<key>Devices</key>
@@ -217,28 +191,141 @@
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
-			<integer>66</integer>
-			<key>ResetHDA</key>
-			<true/>
+			<string>No</string>
+		</dict>
+		<key>Properties</key>
+		<dict>
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>AAPL,ig-platform-id</key>
+				<data>
+				AAAWWQ==
+				</data>
+				<key>device-id</key>
+				<data>
+				FlkAAA==
+				</data>
+				<key>disable-external-gpu</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con1-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con1-pipe</key>
+				<data>
+				CgAAAA==
+				</data>
+				<key>framebuffer-con1-type</key>
+				<data>
+				AAgAAA==
+				</data>
+				<key>framebuffer-fbmem</key>
+				<data>
+				AACQAA==
+				</data>
+				<key>framebuffer-patch-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-stolenmem</key>
+				<data>AAAwAQ==</data>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x14,0x0)</key>
+			<dict>
+				<key>AAPL,current-available</key>
+				<data>NAgAAA==</data>
+				<key>AAPL,current-extra</key>
+				<data>mAgAAA==</data>
+				<key>AAPL,current-extra-in-sleep</key>
+				<data>QAYAAA==</data>
+				<key>AAPL,max-port-current-in-sleep</key>
+				<data>NAgAAA==</data>
+				<key>AAPL,slot-name</key>
+				<string>PCI-Express</string>
+				<key>model</key>
+				<string>Sunrise Point-LP USB 3.0 xHCI Controller</string>
+				<key>name</key>
+				<string>pci8086,9d2f</string>
+				<key>subsystem-id</key>
+				<data>cHIAAA==</data>
+				<key>subsystem-vendor-id</key>
+				<data>hoAAAA==</data>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x16,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>PCI-Express</string>
+				<key>device_type</key>
+				<string>IMEI</string>
+				<key>model</key>
+				<string>Sunrise Point-LP CSME HECI #1</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1c,0x0)</key>
+			<dict>
+				<key>reg-ltrovr</key>
+				<data>AAQAAAAAAAA=</data>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1c,0x4)</key>
+			<dict>
+				<key>reg-ltrovr</key>
+				<data>AAQAAAAAAAA=</data>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1c,0x7)</key>
+			<dict>
+				<key>reg-ltrovr</key>
+				<data>AAQAAAAAAAA=</data>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1c,0x8)</key>
+			<dict>
+				<key>reg-ltrovr</key>
+				<data>AAQAAAAAAAA=</data>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1f,0x2)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>PCI-Express</string>
+				<key>device_type</key>
+				<string>PCHPMC Controller</string>
+				<key>model</key>
+				<string>Sunrise Point-LP PMC</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>PCI-Express</string>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
+				<key>hda-idle-support</key>
+				<string>1</string>
+				<key>layout-id</key>
+				<integer>66</integer>
+				<key>model</key>
+				<string>Realtek ALC298 Audio Controller</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1f,0x4)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>PCI-Express</string>
+				<key>model</key>
+				<string>Sunrise Point-LP SMBus</string>
+			</dict>
 		</dict>
 		<key>USB</key>
 		<dict>
-			<key>AddClockID</key>
-			<false/>
 			<key>FixOwnership</key>
-			<false/>
-			<key>HighCurrent</key>
-			<false/>
-			<key>Inject</key>
 			<true/>
+			<key>AddClockID</key>
+			<true/>
+			<key>Inject</key>
+			<false/>
 		</dict>
-		<key>UseIntelHDMI</key>
-		<true/>
 	</dict>
 	<key>GUI</key>
 	<dict>
-		<key>ConsoleMode</key>
-		<string>0</string>
 		<key>Hide</key>
 		<array>
 			<string>Preboot</string>
@@ -247,18 +334,10 @@
 			<string>Time Machine</string>
 			<string>Recovery HD</string>
 		</array>
-		<key>Language</key>
-		<string>en:0</string>
 		<key>Mouse</key>
 		<dict>
-			<key>DoubleClick</key>
-			<integer>500</integer>
 			<key>Enabled</key>
 			<false/>
-			<key>Mirror</key>
-			<false/>
-			<key>Speed</key>
-			<integer>8</integer>
 		</dict>
 		<key>Scan</key>
 		<dict>
@@ -269,7 +348,7 @@
 			<key>Linux</key>
 			<true/>
 			<key>Tool</key>
-			<false/>
+			<true/>
 		</dict>
 		<key>ScreenResolution</key>
 		<string>1920x1080</string>
@@ -288,54 +367,43 @@
 			<key>ATI</key>
 			<false/>
 			<key>Intel</key>
-			<true/>
+			<false/>
 			<key>NVidia</key>
 			<false/>
 		</dict>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
-		<key>AppleIntelCPUPM</key>
-		<false/>
 		<key>AppleRTC</key>
 		<false/>
-		<key>Debug</key>
-		<false/>
-		<key>KernelCpu</key>
-		<false/>
-		<key>KernelLapic</key>
-		<false/>
-		<key>KernelPm</key>
-		<true/>
+		<key>KextsToPatch</key>
+		<array>
+			<dict>
+				<key>Comment</key>
+				<string>Enable TRIM for SSD</string>
+				<key>Name</key>
+				<string>com.apple.iokit.IOAHCIBlockStorage</string>
+				<key>Find</key>
+				<data>
+				AEFQUExFIFNTRAA=
+				</data>
+				<key>Replace</key>
+				<data>
+				AAAAAAAAAAAAAAA=
+				</data>
+			</dict>
+		</array>
 		<key>KernelToPatch</key>
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>Disable panic kext logging on 10.13 Debug kernel</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				sABMi1Xw
-				</data>
+				<string>Disable panic kext logging on 10.13 release kernel (credit vit9696)</string>
 				<key>MatchOS</key>
-				<string>10.13</string>
-				<key>Replace</key>
-				<data>
-				SIPEQF3D
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Disable panic kext logging on 10.13 Release kernel</string>
-				<key>Disabled</key>
-				<false/>
+				<string>10.13.x</string>
 				<key>Find</key>
 				<data>
 				igKEwHRE
 				</data>
-				<key>MatchOS</key>
-				<string>10.13</string>
 				<key>Replace</key>
 				<data>
 				igKEwOtE
@@ -343,155 +411,26 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>MSR 0xE2 _xcpm_idle instant reboot(c) Pike R. Alpha</string>
-				<key>Disabled</key>
-				<false/>
+				<string>Disable panic kext logging on 10.14 release kernel (credit vit9696)</string>
+				<key>MatchOS</key>
+				<string>10.14.x</string>
 				<key>Find</key>
 				<data>
-				ILniAAAADzA=
+				igKEwHRC
 				</data>
 				<key>Replace</key>
 				<data>
-				ILniAAAAkJA=
-				</data>
-			</dict>
-		</array>
-		<key>KextsToPatch</key>
-		<array>
-			<dict>
-				<key>Comment</key>
-				<string>Prevent Apple I2C kexts from attaching to I2C controllers, credit CoolStar</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				SU9LaXQ=
-				</data>
-				<key>InfoPlistPatch</key>
-				<true/>
-				<key>Name</key>
-				<string>com.apple.driver.AppleIntelLpssI2C</string>
-				<key>Replace</key>
-				<data>
-				SU9LaXM=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Prevent Apple I2C kexts from attaching to I2C controllers, credit CoolStar</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				SU9LaXQ=
-				</data>
-				<key>InfoPlistPatch</key>
-				<true/>
-				<key>Name</key>
-				<string>com.apple.driver.AppleIntelLpssI2CController</string>
-				<key>Replace</key>
-				<data>
-				SU9LaXM=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>HDMI-audio补丁,端口0204,0x59160000</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				AgQKAAAEAACHAQAA
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>com.apple.driver.AppleIntelKBLGraphicsFramebuffer</string>
-				<key>Replace</key>
-				<data>
-				AgQKAAAIAACHAQAA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>HDMI-audio补丁,端口0105,0x59160000</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				AQUJAAAEAACHAQAA
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>com.apple.driver.AppleIntelKBLGraphicsFramebuffer</string>
-				<key>Replace</key>
-				<data>
-				AQUJAAAIAACHAQAA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>HDMI-audio补丁,端口0105,0x591b0000</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				AgQKAAAIAACHAQAAAwYKAAAEAACHAQAA
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>com.apple.driver.AppleIntelKBLGraphicsFramebuffer</string>
-				<key>Replace</key>
-				<data>
-				AQUKAAAIAACHAQAAAgQKAAAIAACHAQAA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>change F%uT%04x to F%uTxxxx in AppleBacklightInjector.kext (credit RehabMan)</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				RiV1VCUwNHgA
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>com.apple.driver.AppleBacklight</string>
-				<key>Replace</key>
-				<data>
-				RiV1VHh4eHgA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>扩展磁盘图标补丁</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				RXh0ZXJuYWw=
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>com.apple.driver.AppleAHCIPort</string>
-				<key>Replace</key>
-				<data>
-				SW50ZXJuYWw=
+				igKEwOtC
 				</data>
 			</dict>
 		</array>
 	</dict>
 	<key>RtVariables</key>
 	<dict>
-		<key>BooterConfig</key>
-		<string>0x28</string>
 		<key>CsrActiveConfig</key>
 		<string>0x67</string>
+		<key>BooterConfig</key>
+		<string>0x28</string>
 		<key>ROM</key>
 		<string>UseMacAddr0</string>
 	</dict>
@@ -539,8 +478,6 @@
 		<string>C02VW1VTHV29</string>
 		<key>Trust</key>
 		<true/>
-		<key>Version</key>
-		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
