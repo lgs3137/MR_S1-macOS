@@ -1,9 +1,8 @@
 # macOS Sierra & High Sierra & Mojave for 机械革命S1
 
+- [Enable macOS HiDPI](https://github.com/daliansky/one-key-hidpi) 
 
 ## Features
-
-- [Enable macOS HiDPI](https://github.com/daliansky/one-key-hidpi) 
 
 * Working
   * CPU
