@@ -1,4 +1,4 @@
-# macOS Sierra & High Sierra & macOS Mojave for 机械革命S1
+# macOS Sierra & High Sierra & Mojave for 机械革命S1
 
 
 ## Features
@@ -24,7 +24,7 @@
 ## Change Log:
 
 - 2019.01.07
-	- Update Hotpatch.
+	- Update Hotpatch & Kext.
 
 - 2019.01.04
 	- Update Kext for Broadcom BCM94352z/DW1560.
