@@ -3,6 +3,8 @@
 
 ## Features
 
+- [Enable macOS HiDPI](https://github.com/daliansky/one-key-hidpi) 
+
 * Working
   * CPU
   * GPU acceleration (Disable Nvidia MX150)
