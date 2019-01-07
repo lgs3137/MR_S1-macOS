@@ -1,4 +1,4 @@
-# macOS Sierra & High Sierra macOS Mojave for 机械革命S1
+# macOS Sierra & High Sierra & Mojave for 机械革命S1
 
 - [Switch to Broadcom BCM94352z/DW1560](https://github.com/lgs3137/MR_S1-macOS/tree/BCM94352z) 
 
@@ -27,7 +27,7 @@
 ## Change Log:
 
 - 2019.01.07
-	- Update Hotpatch.
+	- Update Hotpatch & Kext.
 
 - 2019.01.04
 	- Update Clover & Hotpatch & Kext & config.plist for macOS Mojave 10.14.2.
