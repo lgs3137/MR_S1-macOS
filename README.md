@@ -1,4 +1,4 @@
-# macOS Sierra & High Sierra for 机械革命S1
+# macOS Sierra & High Sierra & macOS Mojave for 机械革命S1
 
 
 ## Features
@@ -13,8 +13,8 @@
   * Keyboard
   * Touchpad
   * Webcam
-  * Bluetooth
   * WIFI (Broadcom BCM94352z)
+  * Bluetooth
 
 ## Credits
 
@@ -22,6 +22,9 @@
 - [daliansky](https://github.com/daliansky) 
 
 ## Change Log:
+
+- 2019.01.04
+	- Update Hotpatch.
 
 - 2019.01.04
 	- Update Kext for Broadcom BCM94352z/DW1560.
