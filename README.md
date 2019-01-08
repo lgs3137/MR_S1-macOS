@@ -1,4 +1,4 @@
-# macOS Sierra & High Sierra & Mojave for 机械革命S1
+# macOS Mojave for 机械革命S1
 
 - [Switch to Broadcom BCM94352z/DW1560](https://github.com/lgs3137/MR_S1-macOS/tree/BCM94352z) 
 - [Enable macOS HiDPI](https://github.com/daliansky/one-key-hidpi) 
@@ -18,7 +18,7 @@
   * Bluetooth
 
 * Non-working
-   * WIFI never
+   * WIFI (Intel® Dual Band Wireless-AC 3168)
 
 ## Credits
 
@@ -26,6 +26,9 @@
 - [daliansky](https://github.com/daliansky) 
 
 ## Change Log:
+
+- 2019.01.08
+	- Update Kext.
 
 - 2019.01.07
 	- Update Hotpatch & Kext.
