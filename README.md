@@ -27,6 +27,9 @@
 
 ## Change Log:
 
+- 2019.01.13
+	- Update Clover & Kext & config.plist.
+
 - 2019.01.08
 	- Update Kext.
 
