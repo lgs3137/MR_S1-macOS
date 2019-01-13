@@ -201,6 +201,8 @@
 				<data>
 				AAAWWQ==
 				</data>
+				<key>AAPL,slot-name</key>
+				<string>PCI-Express</string>
 				<key>device-id</key>
 				<data>
 				FlkAAA==
@@ -481,8 +483,6 @@
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
-		<key>CustomUUID</key>
-		<string>AA61C9E1-8001-5FDD-9F1B-0F76A583F45E</string>
 		<key>InjectKexts</key>
 		<string>Yes</string>
 		<key>InjectSystemID</key>
