@@ -27,6 +27,9 @@
 
 ## Change Log:
 
+- 2019.01.27
+	- Update Kext.
+
 - 2019.01.17
 	- Update Hotpatch & config.plist.
 
