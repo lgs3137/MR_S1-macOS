@@ -145,6 +145,14 @@
 					WFNUQQCgDZNQ
 					</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change RTC to XRTC</string>
+					<key>Find</key>
+					<data>UlRDXw==</data>
+					<key>Replace</key>
+					<data>WFJUQw==</data>
+				</dict>
 			</array>
 		</dict>
 		<key>DropTables</key>
@@ -308,8 +316,8 @@
 		<dict>
 			<key>FixOwnership</key>
 			<true/>
-			<key>AddClockID</key>
-			<true/>
+			<key>HighCurrent</key>
+			<false/>
 			<key>Inject</key>
 			<false/>
 		</dict>
@@ -366,6 +374,10 @@
 	<dict>
 		<key>AppleRTC</key>
 		<false/>
+		<key>ForceKextsToLoad</key>
+		<array>
+			<string>\System\Library\Extensions\IOGraphicsFamily.kext</string>
+		</array>
 		<key>KextsToPatch</key>
 		<array>
 			<dict>
