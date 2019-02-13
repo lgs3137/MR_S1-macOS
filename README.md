@@ -1,6 +1,7 @@
 # macOS Mojave for 机械革命S1
 
 - [Enable macOS HiDPI](https://github.com/daliansky/one-key-hidpi) 
+- [CPUFriend](https://github.com/daliansky/XiaoMi-Pro/tree/master/one-key-cpufriend) 
 
 ## Features
 
