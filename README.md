@@ -2,6 +2,7 @@
 
 - [Switch to Broadcom BCM94352z/DW1560](https://github.com/lgs3137/MR_S1-macOS/tree/BCM94352z) 
 - [Enable macOS HiDPI](https://github.com/daliansky/one-key-hidpi) 
+- [CPUFriend](https://github.com/daliansky/XiaoMi-Pro/tree/master/one-key-cpufriend) 
 
 ## Features
 
