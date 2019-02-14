@@ -18,6 +18,8 @@
 				<true/>
 				<key>AddMCHC</key>
 				<true/>
+				<key>AddPNLF</key>
+				<true/>
 				<key>FixTMR</key>
 				<true/>
 				<key>FixADP1</key>
@@ -135,6 +137,14 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
+					<string>change LGPA to XGPA</string>
+					<key>Find</key>
+					<data>TEdQQQk=</data>
+					<key>Replace</key>
+					<data>WEdQQQk=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
 					<string>change MATH._STA and LDR2._STA to XSTA</string>
 					<key>Find</key>
 					<data>
@@ -189,8 +199,6 @@
 		<false/>
 		<key>Timeout</key>
 		<integer>3</integer>
-		<key>HibernationFixup</key>
-		<true/>
 		<key>RtcHibernateAware</key>
 		<true/>
 	</dict>
@@ -312,6 +320,10 @@
 				<string>Intel Sunrise Point-LP SMBus</string>
 			</dict>
 		</dict>
+		<key>SetIntelBacklight</key>
+		<true/>
+		<key>SetIntelMaxBacklight</key>
+		<true/>
 		<key>USB</key>
 		<dict>
 			<key>FixOwnership</key>
