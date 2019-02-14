@@ -137,14 +137,6 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change LGPA to XGPA</string>
-					<key>Find</key>
-					<data>TEdQQQk=</data>
-					<key>Replace</key>
-					<data>WEdQQQk=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>change MATH._STA and LDR2._STA to XSTA</string>
 					<key>Find</key>
 					<data>
