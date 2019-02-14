@@ -18,6 +18,8 @@
 				<true/>
 				<key>AddMCHC</key>
 				<true/>
+				<key>AddPNLF</key>
+				<true/>
 				<key>FixTMR</key>
 				<true/>
 				<key>FixADP1</key>
@@ -189,8 +191,6 @@
 		<false/>
 		<key>Timeout</key>
 		<integer>3</integer>
-		<key>HibernationFixup</key>
-		<true/>
 		<key>RtcHibernateAware</key>
 		<true/>
 	</dict>
@@ -312,6 +312,10 @@
 				<string>Intel Sunrise Point-LP SMBus</string>
 			</dict>
 		</dict>
+		<key>SetIntelBacklight</key>
+		<true/>
+		<key>SetIntelMaxBacklight</key>
+		<true/>
 		<key>USB</key>
 		<dict>
 			<key>FixOwnership</key>
