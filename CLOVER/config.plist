@@ -191,7 +191,7 @@
 		<false/>
 		<key>Timeout</key>
 		<integer>3</integer>
-		<key>RtcHibernateAware</key>
+		<key>NeverHibernate</key>
 		<true/>
 	</dict>
 	<key>Devices</key>
