@@ -25,6 +25,9 @@
 
 ## Change Log:
 
+- 2019.03.25
+	- Update Kext.
+
 - 2019.03.14
 	- Update config.plist.
 
