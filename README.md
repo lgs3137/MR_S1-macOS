@@ -28,6 +28,9 @@
 
 ## Change Log:
 
+- 2019.04.28
+	- Update Clover & Hotpatch & Kext & config.plist.
+
 - 2019.03.25
 	- Update Hotpatch & Kext.
 
