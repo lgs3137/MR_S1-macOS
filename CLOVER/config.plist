@@ -236,7 +236,7 @@
 				<key>AAPL,slot-name</key>
 				<string>PCI-Express</string>
 				<key>model</key>
-				<string>Intel Wireless 8265</string>
+				<string>Intel Wireless 3168</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1d,0x0)</key>
 			<dict>
