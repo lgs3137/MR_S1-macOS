@@ -1,25 +1,30 @@
-# macOS Mojave for 机械革命S1
+# macOS Mojave for MECHREVO S1
 
 - [Switch to Broadcom BCM94352z/DW1560](https://github.com/lgs3137/MR_S1-macOS/tree/BCM94352z) 
 - [Enable macOS HiDPI](https://github.com/daliansky/one-key-hidpi) 
 - [CPUFriend](https://github.com/daliansky/XiaoMi-Pro/tree/master/one-key-cpufriend) 
 
+## Configuration
+
+| Specifications | Detail                                                  |
+| ------------------- | -------------------------------------------|
+| Computer model      | MECHREVO S1 (MX150/GTX)                    |
+| Processor           | Intel Core i5-8250U/i7-8550U Processor     |
+| Memory              | 8GB/16GB Samsung DDR4 2400MHz              |
+| Hard Disk           | FORESEE NVMe SSD Controller P900F 256GB    |
+| Integrated Graphics | Intel UHD Graphics 620                     |
+| Monitor             | CMO CMN14D5 FHD 1920x1080 (14 inch)        |
+| Sound Card          | Realtek ALC298 (layout-id:66)              |
+| Wireless Card       | Intel Wireless 3168                        |
+| SD Card Reader      | Realtek RTS5129                            |
+
 ## Features
 
-* Working
-  * CPU
-  * GPU acceleration (Disable Nvidia MX150)
-  * Audio (ALC298)
-  * SSD
-  * USB (A & C)
-  * HDMI
-  * Keyboard
-  * Touchpad
-  * Webcam
-  * Bluetooth
-
 * Non-working
+   * GPU (Nvidia MX150/GTX)
    * WIFI (Intel® Dual Band Wireless-AC 3168)
+   * SD Card Reader (Realtek RTS5129)
+   * Fingerprint
 
 ## Credits
 
@@ -27,6 +32,9 @@
 - [daliansky](https://github.com/daliansky) 
 
 ## Change Log:
+
+- 2019.05.10
+	- Update Hotpatch & Kext & config.plist.
 
 - 2019.04.28
 	- Update Clover & Hotpatch & Kext & config.plist.
