@@ -32,6 +32,9 @@
 
 ## Change Log:
 
+- 2019.05.13
+	- Update Hotpatch.
+
 - 2019.05.10
 	- Update Hotpatch & Kext & config.plist.
 
