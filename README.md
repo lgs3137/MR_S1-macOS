@@ -33,6 +33,9 @@
 
 ## Change Log:
 
+- 2019.05.13
+	- Delete efi.
+
 - 2019.05.10
 	- Update Hotpatch & Kext & config.plist.
 
