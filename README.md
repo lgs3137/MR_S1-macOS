@@ -33,6 +33,9 @@
 
 ## Change Log:
 
+- 2019.05.14
+	- Update config.plist.
+
 - 2019.05.13
 	- Delete efi.
 
