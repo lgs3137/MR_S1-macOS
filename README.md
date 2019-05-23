@@ -33,6 +33,9 @@
 
 ## Change Log:
 
+- 2019.05.23
+	- Update Clover & Hotpatch & config.plist.
+
 - 2019.05.14
 	- Update config.plist.
 
