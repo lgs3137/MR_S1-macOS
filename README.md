@@ -33,6 +33,9 @@
 
 ## Change Log:
 
+- 2019.05.25
+	- Update Kext.
+
 - 2019.05.24
 	- Update Clover.
 
