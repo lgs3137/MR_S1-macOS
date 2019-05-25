@@ -1,4 +1,4 @@
-# macOS Mojave for 机械革命S1
+# macOS Mojave for MECHREVO S1
 
 - [Enable macOS HiDPI](https://github.com/daliansky/one-key-hidpi) 
 - [CPUFriend](https://github.com/daliansky/XiaoMi-Pro/tree/master/one-key-cpufriend) 
@@ -32,7 +32,7 @@
 
 ## Change Log:
 
-- 2019.05.23
+- 2019.05.25
 	- Update Kext.
 
 - 2019.05.24
