@@ -33,7 +33,7 @@
 ## Change Log:
 
 - 2019.05.26
-	- Update Hotpatch.
+	- Update Hotpatch & config.plist.
 
 - 2019.05.25
 	- Update Kext.
