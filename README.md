@@ -32,6 +32,9 @@
 
 ## Change Log:
 
+- 2019.05.26
+	- Update Hotpatch.
+
 - 2019.05.25
 	- Update Kext.
 
