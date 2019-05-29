@@ -1,6 +1,6 @@
 # macOS Mojave for MECHREVO S1
 
-- [Enable macOS HiDPI](https://github.com/daliansky/one-key-hidpi) 
+- [Enable macOS HiDPI](https://github.com/xzhih/one-key-hidpi) 
 - [CPUFriend](https://github.com/daliansky/XiaoMi-Pro/tree/master/one-key-cpufriend) 
 
 ## Configuration
@@ -31,6 +31,9 @@
 - [daliansky](https://github.com/daliansky) 
 
 ## Change Log:
+
+- 2019.05.29
+	- Update config.plist & Kext for Fix Line-in Mic.
 
 - 2019.05.27
 	- Update Kext.
