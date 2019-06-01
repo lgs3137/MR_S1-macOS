@@ -32,6 +32,9 @@
 
 ## Change Log:
 
+- 2019.06.01
+	- Update Hotpatch & Kext.
+
 - 2019.05.29
 	- Update config.plist & Kext for Fix Line-in Mic.
 
