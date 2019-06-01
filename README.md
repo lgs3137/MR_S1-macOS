@@ -33,7 +33,7 @@
 ## Change Log:
 
 - 2019.06.01
-	- Update Hotpatch & Kext.
+	- Update Hotpatch & Kext for Fix USB3.0 speed.
 
 - 2019.05.29
 	- Update config.plist & Kext for Fix Line-in Mic.
