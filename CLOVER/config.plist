@@ -66,6 +66,7 @@
 			</array>
 		</dict>
 		<key>DropTables</key>
+		<array/>
 		<key>SSDT</key>
 		<dict>
 			<key>DropOem</key>
