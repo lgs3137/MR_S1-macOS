@@ -33,6 +33,9 @@
 
 ## Change Log:
 
+- 2019.06.04
+	- Update Clover4942 & Kext build for Catalina.
+
 - 2019.06.01
 	- Update Hotpatch & Kext for Fix USB3.0 speed.
 
