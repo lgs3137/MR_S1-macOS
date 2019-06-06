@@ -1,4 +1,4 @@
-# macOS Mojave for MECHREVO S1
+# macOS Catalina for MECHREVO S1
 
 - [Enable macOS HiDPI](https://github.com/xzhih/one-key-hidpi) 
 - [CPUFriend](https://github.com/daliansky/XiaoMi-Pro/tree/master/one-key-cpufriend) 
@@ -31,6 +31,10 @@
 - [daliansky](https://github.com/daliansky) 
 
 ## Change Log:
+
+- 2019.06.06
+	- Update Clover4948 & Kext latest build for Catalina | This Branch  Only Test For Catalina.
+	- 更新到 Clover4948 版本,更新 Kext 为原作者最新提交编译版本,这个分支今后将以测试为目的更新,目前该分支在 10.15 上还存在多功能触摸板\蓝牙\电池信息等小功能异常,但已经可以日常使用(忽略 Catalina 自身 Bug),除非用于测试,否则不建议更新.
 
 - 2019.06.04
 	- Update Clover4942 & Kext latest build for Catalina.
