@@ -32,6 +32,10 @@
 
 ## Change Log:
 
+- 2019.06.07
+	- Update Clover4950 & Kext latest build for Catalina | Fix Battery and Sensor.
+	- 更新到 Clover4950 版本,更新 Kext 为原作者最新提交编译版本, 修复电池及其他传感器信息显示,目前该分支在 10.15 上还存在 多手势触控板\蓝牙配对 等小功能异常,但已经可以日常使用(忽略 Catalina 自身 Bug),除非用于测试,否则不建议更新.
+
 - 2019.06.06
 	- Update Clover4948 & Kext latest build for Catalina | This Branch  Only Test For Catalina.
 	- 更新到 Clover4948 版本,更新 Kext 为原作者最新提交编译版本,这个分支今后将以测试为目的更新,目前该分支在 10.15 上还存在多功能触摸板\蓝牙\电池信息等小功能异常,但已经可以日常使用(忽略 Catalina 自身 Bug),除非用于测试,否则不建议更新.
