@@ -12,21 +12,11 @@
 		<dict>
 			<key>DropOEM_DSM</key>
 			<false/>
-			<key>Rtc8Allowed</key>
-			<true/>
 			<key>Fixes</key>
 			<dict>
-				<key>AddDTGP</key>
-				<true/>
 				<key>AddMCHC</key>
 				<true/>
 				<key>AddPNLF</key>
-				<true/>
-				<key>FixADP1</key>
-				<true/>
-				<key>FixRTC</key>
-				<true/>
-				<key>FixTMR</key>
 				<true/>
 			</dict>
 			<key>Patches</key>
@@ -41,7 +31,7 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Rename HPET._STA to XSTA, pair with SSDT-HPET.aml (IRQ Fix)</string>
+					<string>Rename HPET._STA to XSTA, pair with SSDT-HPET.aml</string>
 					<key>Find</key>
 					<data>X1NUQQCgCEg=</data>
 					<key>Replace</key>
@@ -65,8 +55,6 @@
 				</dict>
 			</array>
 		</dict>
-		<key>DropTables</key>
-		<array/>
 		<key>SSDT</key>
 		<dict>
 			<key>DropOem</key>
