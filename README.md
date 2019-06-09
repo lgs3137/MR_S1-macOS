@@ -33,6 +33,10 @@
 
 ## Change Log:
 
+- 2019.06.09
+	- Update Clover4958 & Kext.
+	- 更新到 Clover4958 版本,更新键盘 Kext 切换 Option/Command 按键,目前该分支在 10.15 上还存在 多手势触控板\蓝牙配对 等小功能异常,但已经可以日常使用(忽略 Catalina 自身 Bug),除非用于测试,否则不建议更新.
+
 - 2019.06.08
 	- Update Clover4953 & config.plist.
 	- 更新到 Clover4953 版本,更新 config.plist,目前该分支在 10.15 上还存在 多手势触控板\蓝牙配对 等小功能异常,但已经可以日常使用(忽略 Catalina 自身 Bug),除非用于测试,否则不建议更新.
