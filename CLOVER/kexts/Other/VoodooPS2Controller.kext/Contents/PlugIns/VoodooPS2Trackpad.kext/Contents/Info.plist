@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>19A471t</string>
+	<string>18D109</string>
 	<key>CFBundleExecutable</key>
 	<string>VoodooPS2Trackpad</string>
 	<key>CFBundleGetInfoString</key>
 	<string>2.0.1, Copyright Apple Computer, Inc. 2002-2003, mackerintel 2008, RehabMan 2012-2013</string>
 	<key>CFBundleIdentifier</key>
-	<string>as.acidanthera.voodoo.driver.PS2Trackpad</string>
+	<string>org.rehabman.voodoo.driver.PS2Trackpad</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -45,7 +45,7 @@
 		<key>ALPS GlidePoint</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>as.acidanthera.voodoo.driver.PS2Trackpad</string>
+			<string>org.rehabman.voodoo.driver.PS2Trackpad</string>
 			<key>IOClass</key>
 			<string>ApplePS2ALPSGlidePoint</string>
 			<key>IOProbeScore</key>
@@ -108,7 +108,7 @@
 		<key>Native Multitouch Engine</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>as.acidanthera.voodoo.driver.PS2Trackpad</string>
+			<string>org.rehabman.voodoo.driver.PS2Trackpad</string>
 			<key>IOClass</key>
 			<string>VoodooI2CNativeEngine</string>
 			<key>IOMatchCategory</key>
@@ -119,7 +119,7 @@
 		<key>Sentelic FSP</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>as.acidanthera.voodoo.driver.PS2Trackpad</string>
+			<string>org.rehabman.voodoo.driver.PS2Trackpad</string>
 			<key>IOClass</key>
 			<string>ApplePS2SentelicFSP</string>
 			<key>IOProbeScore</key>
@@ -182,7 +182,7 @@
 		<key>Synaptics TouchPad</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>as.acidanthera.voodoo.driver.PS2Trackpad</string>
+			<string>org.rehabman.voodoo.driver.PS2Trackpad</string>
 			<key>HIDPointerAccelerationTable</key>
 			<data>
 			AACAAFVTQioABwAAAAAAAgAEAAAABAAAABAAAAAQAAAAACAAAA0A
@@ -437,8 +437,6 @@
 	</dict>
 	<key>OSBundleLibraries</key>
 	<dict>
-		<key>as.acidanthera.voodoo.driver.PS2Controller</key>
-		<string>2.0.1</string>
 		<key>com.apple.iokit.IOHIDFamily</key>
 		<string>1.0.0b1</string>
 		<key>com.apple.kpi.iokit</key>
@@ -447,8 +445,12 @@
 		<string>9.0.0</string>
 		<key>com.apple.kpi.mach</key>
 		<string>9.0.0</string>
+		<key>org.rehabman.voodoo.driver.PS2Controller</key>
+		<string>2.0.1</string>
 	</dict>
 	<key>OSBundleRequired</key>
 	<string>Console</string>
+	<key>Source Code</key>
+	<string>https://github.com/RehabMan/OS-X-Voodoo-PS2-Controller</string>
 </dict>
 </plist>
