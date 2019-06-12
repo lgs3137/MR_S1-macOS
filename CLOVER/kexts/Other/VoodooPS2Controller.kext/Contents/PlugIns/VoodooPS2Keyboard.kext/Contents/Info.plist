@@ -290,13 +290,13 @@
 					<key>ActionSwipe4FingersUp</key>
 					<string>67 d, 67 u</string>
 					<key>ActionSwipeDown</key>
-					<string>3b d, 37 d, 7d d, 7d u, 37 u, 3b u</string>
+					<string>67 d, 67 u</string>
 					<key>ActionSwipeLeft</key>
-					<string>37 d, 1e d, 1e u, 37 u</string>
+					<string>3b d, 7b d, 7b u, 3b u</string>
 					<key>ActionSwipeLeftFromEdge</key>
 					<string>3b d, 37 d, 1d d, 1d u, 37 u, 3b u</string>
 					<key>ActionSwipeRight</key>
-					<string>37 d, 21 d, 21 u, 37 u</string>
+					<string>3b d, 7c d, 7c u, 3b u</string>
 					<key>ActionSwipeRightFromEdge</key>
 					<string>3b d, 37 d, 19 d, 19 u, 37 u, 3b u</string>
 					<key>ActionSwipeUp</key>
