@@ -32,6 +32,11 @@
 
 ## Change Log:
 
+- 2019.06.22
+	- Update Clover4968 & Kext | Fix Blutooth.
+	- 更新到 Clover4968 版本,更新BCM94352z Kext (联想NGFF)修复蓝牙配对问题.
+	- 目前该分支在 10.15 上还存在 多手势触控板 等小功能异常,但已经可以日常使用(忽略 Catalina 自身 Bug),除非用于测试,否则不建议更新.
+
 - 2019.06.12
 	- Update Clover4964 & Kext.
 	- 更新到 Clover4964 版本,更新键盘 Kext 修复触摸板失效.
