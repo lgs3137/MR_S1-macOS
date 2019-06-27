@@ -33,6 +33,10 @@
 
 ## Change Log:
 
+- 2019.06.27
+	- Update Clover4977 & Hotpatch & Kext.
+	- 目前该分支在 10.15 上还存在 多手势触控板 等小功能异常,但已经可以日常使用(忽略 Catalina 自身 Bug).
+
 - 2019.06.12
 	- Update Clover4964 & Kext.
 	- 更新到 Clover4964 版本,更新键盘 Kext 修复触摸板失效.
