@@ -32,6 +32,9 @@
 
 ## Change Log:
 
+- 2019.07.06
+	- Update Kext | Support macOS10.15.
+
 - 2019.07.04
 	- Update Clover4979 & Kext & config.plist | Add OpenCore0.0.3.
 	- 新增 OC 引导，若要使用 OC 引导，需在Win下手动添加 \EFI\BOOT\BOOTX64.efi 为引导项即可选择进入OC.
