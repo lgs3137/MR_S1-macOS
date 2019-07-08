@@ -33,6 +33,9 @@
 
 ## Change Log:
 
+- 2019.07.08
+	- Update Kext.
+
 - 2019.07.06
 	- Update Kext | Support macOS10.15.
 
