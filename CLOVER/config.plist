@@ -31,14 +31,6 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Rename HPET._STA to XSTA, pair with SSDT-HPET.aml</string>
-					<key>Find</key>
-					<data>X1NUQQCgCEg=</data>
-					<key>Replace</key>
-					<data>WFNUQQCgCEg=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>Rename MATH._STA and LDR2._STA to XSTA</string>
 					<key>Find</key>
 					<data>X1NUQQCgDZNQ</data>
@@ -349,7 +341,7 @@
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
-		<string>MacBookPro14,1</string>
+		<string>1.0</string>
 		<key>ChassisAssetTag</key>
 		<string>MacBook-Aluminum</string>
 		<key>ChassisManufacturer</key>
@@ -364,6 +356,8 @@
 		<string>0xFC0FE137</string>
 		<key>FirmwareFeaturesMask</key>
 		<string>0xFF1FFF3F</string>
+		<key>LocationInChassis</key>
+		<string>Part Component</string>
 		<key>Manufacturer</key>
 		<string>Apple Inc.</string>
 		<key>Mobile</key>
@@ -374,6 +368,8 @@
 		<string>MacBookPro14,1</string>
 		<key>SerialNumber</key>
 		<string>C02VW1VTHV29</string>
+		<key>SmUUID</key>
+		<string>AEA18B07-D5AA-4B00-A64E-A7E9A844A961</string>
 		<key>Trust</key>
 		<true/>
 		<key>Version</key>

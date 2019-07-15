@@ -127,32 +127,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Rename HPET._STA to XSTA, pair with SSDT-HPET.aml</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>X1NUQQCgCEg=</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>OemTableId</key>
-				<data></data>
-				<key>Replace</key>
-				<data>WFNUQQCgCEg=</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>RFNEVA==</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>Rename MATH._STA and LDR2._STA to XSTA</string>
 				<key>Count</key>
 				<integer>0</integer>
@@ -745,6 +719,8 @@
 			<string>MacBookPro14,1</string>
 			<key>SystemSerialNumber</key>
 			<string>C02VW1VTHV29</string>
+			<key>SystemUUID</key>
+			<string>AEA18B07-D5AA-4B00-A64E-A7E9A844A961</string>
 		</dict>
 		<key>Generic</key>
 		<dict>
@@ -754,30 +730,32 @@
 			<string>MacBookPro14,1</string>
 			<key>SystemSerialNumber</key>
 			<string>C02VW1VTHV29</string>
+			<key>SystemUUID</key>
+			<string>AEA18B07-D5AA-4B00-A64E-A7E9A844A961</string>
 		</dict>
 		<key>PlatformNVRAM</key>
 		<dict>
 			<key>FirmwareFeatures</key>
-			<string>37E10FFC 00000000</string>
+			<string>FC0FE137 00000000</string>
 			<key>FirmwareFeaturesMask</key>
-			<string>3FFF1FFF 00000000</string>
+			<string>FF1FFF3F 00000000</string>
 			<key>MLB</key>
 			<string>C02752306GUF1171H</string>
 		</dict>
 		<key>SMBIOS</key>
 		<dict>
 			<key>BIOSReleaseDate</key>
-			<string>12/19/2018</string>
+			<string>05/28/2019</string>
 			<key>BIOSVendor</key>
 			<string>Apple Inc.</string>
 			<key>BIOSVersion</key>
 			<string>196.0.0.0.0</string>
 			<key>BiosReleaseDate</key>
-			<string>02/08/2018</string>
+			<string>05/28/2018</string>
 			<key>BiosVendor</key>
 			<string>Apple Inc.</string>
 			<key>BiosVersion</key>
-			<string>MBP141.88Z.0173.B00.1802081002</string>
+			<string>MBP141.88Z.F000.B00.1905281616</string>
 			<key>Board-ID</key>
 			<string>Mac-B4831CEBD52A0C4C</string>
 			<key>BoardAssetTag</key>
@@ -807,9 +785,9 @@
 			<key>Family</key>
 			<string>MacBook Pro</string>
 			<key>FirmwareFeatures</key>
-			<string>37E10FFC 00000000</string>
+			<string>FC0FE137 00000000</string>
 			<key>FirmwareFeaturesMask</key>
-			<string>3FFF1FFF 00000000</string>
+			<string>FF1FFF3F 00000000</string>
 			<key>LocationInChassis</key>
 			<string>Part Component</string>
 			<key>Manufacturer</key>
@@ -828,6 +806,8 @@
 			<string>Mac-B4831CEBD52A0C4C</string>
 			<key>SystemSerialNumber</key>
 			<string>C02VW1VTHV29</string>
+			<key>SystemUUID</key>
+			<string>AEA18B07-D5AA-4B00-A64E-A7E9A844A961</string>
 			<key>SystemVersion</key>
 			<string>1.0</string>
 			<key>Trust</key>
@@ -840,7 +820,7 @@
 		<key>UpdateSMBIOS</key>
 		<true/>
 		<key>UpdateSMBIOSMode</key>
-		<string>Create</string>
+		<string>Auto</string>
 	</dict>
 	<key>UEFI</key>
 	<dict>
