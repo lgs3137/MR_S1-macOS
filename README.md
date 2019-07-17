@@ -33,7 +33,7 @@
 ## Change Log:
 
 - 2019.07.17
-	- Update Clover & Hotpatch & Kext.
+	- Update Clover5019 & Kext.
 
 - 2019.07.16
 	- Update Kext & config.plist.
