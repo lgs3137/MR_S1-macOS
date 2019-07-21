@@ -33,6 +33,10 @@
 
 ## Change Log:
 
+- 2019.07.21
+	- Update Clover5027 & OC0.0.4 & Kext.
+	- 支持 H264、HEVC 硬解
+
 - 2019.07.17
 	- Update Clover5019 & Kext.
 
