@@ -839,7 +839,7 @@
 			<key>BoardType</key>
 			<integer>10</integer>
 			<key>BoardVersion</key>
-			<string>1.0</string>
+			<string>MacBookPro14,1</string>
 			<key>ChassisAssetTag</key>
 			<string>MacBook-Aluminum</string>
 			<key>ChassisManufacturer</key>
@@ -898,7 +898,7 @@
 		<array>
 			<string>HFSPlus.efi</string>
 			<string>ApfsDriverLoader.efi</string>
-			<string>AppleUISupport.efi</string>
+			<string>AppleUiSupport.efi</string>
 			<string>AptioInputFix.efi</string>
 			<string>AptioMemoryFix.efi</string>
 			<string>VirtualSmc.efi</string>
