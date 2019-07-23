@@ -4,7 +4,7 @@
 - [Enable macOS HiDPI](https://github.com/xzhih/one-key-hidpi) 
 - [CPUFriend](https://github.com/daliansky/XiaoMi-Pro/tree/master/one-key-cpufriend) 
 
-## 交流扣扣群：[45822629](https://jq.qq.com/?_wv=1027&k=5F5QsbT)
+## 扣扣交流群：[45822629](https://jq.qq.com/?_wv=1027&k=5F5QsbT)
 
 ## Configuration
 
