@@ -1,7 +1,7 @@
 # macOS Catalina for MECHREVO S1
 
 - [Switch to Broadcom BCM94352z/DW1560](https://github.com/lgs3137/MR_S1-macOS/tree/BCM94352z) 
-- [Enable macOS HiDPI](https://github.com/xzhih/one-key-hidpi) 
+- [Enable macOS HiDPI](https://github.com/lgs3137/MR_S1-macOS/tree/master/one-key-hidpi) 
 - [CPUFriend](https://github.com/daliansky/XiaoMi-Pro/tree/master/one-key-cpufriend) 
 
 ## 扣扣交流群：[45822629](https://jq.qq.com/?_wv=1027&k=5F5QsbT)
@@ -34,6 +34,9 @@
 - [daliansky](https://github.com/daliansky) 
 
 ## Change Log:
+
+- 2019.07.24
+	- Added one-key-hidpi.
 
 - 2019.07.21
 	- Update Clover5027 & OC0.0.4 & Kext.
