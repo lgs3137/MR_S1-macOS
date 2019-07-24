@@ -1,6 +1,6 @@
 # macOS Catalina for MECHREVO S1
 
-- [Enable macOS HiDPI](https://github.com/xzhih/one-key-hidpi) 
+- [Enable macOS HiDPI](https://github.com/lgs3137/MR_S1-macOS/tree/master/one-key-hidpi) 
 - [CPUFriend](https://github.com/daliansky/XiaoMi-Pro/tree/master/one-key-cpufriend) 
 
 ## Configuration
@@ -27,6 +27,7 @@
 
 ## Credits
 
+- [Acidanthera](https://github.com/acidanthera)
 - [RehabMan](https://github.com/RehabMan) 
 - [daliansky](https://github.com/daliansky) 
 
