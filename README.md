@@ -33,6 +33,9 @@
 
 ## Change Log:
 
+- 2019.07.25
+	- Update Clover5028 & Kext. | Fix Touchpad on macOS 10.15
+
 - 2019.07.21
 	- Update Clover5027 & Kext.
 	- 支持 H264、HEVC 硬解

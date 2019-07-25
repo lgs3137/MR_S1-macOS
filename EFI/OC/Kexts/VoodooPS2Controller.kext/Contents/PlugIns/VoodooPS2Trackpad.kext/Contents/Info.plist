@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>18F132</string>
+	<string>18G84</string>
 	<key>CFBundleExecutable</key>
 	<string>VoodooPS2Trackpad</string>
 	<key>CFBundleGetInfoString</key>
@@ -308,10 +308,6 @@
 					<false/>
 					<key>USBMouseStopsTrackpad</key>
 					<integer>0</integer>
-					<key>UnitsPerMMX</key>
-					<integer>50</integer>
-					<key>UnitsPerMMY</key>
-					<integer>50</integer>
 					<key>UseHighRate</key>
 					<true/>
 					<key>WakeDelay</key>
