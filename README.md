@@ -30,10 +30,14 @@
 
 ## Credits
 
+- [Acidanthera](https://github.com/acidanthera)
 - [RehabMan](https://github.com/RehabMan) 
 - [daliansky](https://github.com/daliansky) 
 
 ## Change Log:
+
+- 2019.07.25
+	- Update Clover5028 & Kext. | Fix Touchpad on macOS 10.15
 
 - 2019.07.24
 	- Added one-key-hidpi.
