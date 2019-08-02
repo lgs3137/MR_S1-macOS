@@ -1,4 +1,4 @@
-# macOS Catalina for MECHREVO S1
+# macOS Catalina & Mojave for MECHREVO S1（and MSI PS42 8RB）
 
 - [Enable macOS HiDPI](https://github.com/lgs3137/MR_S1-macOS/tree/master/one-key-hidpi) 
 - [CPUFriend](https://github.com/daliansky/XiaoMi-Pro/tree/master/one-key-cpufriend) 
@@ -32,6 +32,9 @@
 - [daliansky](https://github.com/daliansky) 
 
 ## Change Log:
+
+- 2019.08.02
+	- Update Clover5033 & Kext & OC.
 
 - 2019.07.25
 	- Update Clover5028 & Kext. | Fix Touchpad on macOS 10.15

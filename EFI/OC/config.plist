@@ -243,8 +243,14 @@
 			<dict>
 				<key>AAPL,slot-name</key>
 				<string>Internal</string>
+				<key>compatible</key>
+				<string>pci14e4,43b1</string>
+				<key>device_type</key>
+				<string>Airport Extreme</string>
 				<key>model</key>
-				<string>Intel Wireless 3168</string>
+				<string>Broadcom BCM94352z 802.11ac Wireless</string>
+				<key>name</key>
+				<string>Airport</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1d,0x0)</key>
 			<dict>
@@ -376,20 +382,6 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/BrcmPatchRAM2</string>
-				<key>MatchKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
-				<string>BT4LEContinuityFixup.kext</string>
-				<key>Comment</key>
-				<string>Blutooth</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/BT4LEContinuityFixup</string>
 				<key>MatchKernel</key>
 				<string></string>
 				<key>PlistPath</key>
@@ -704,7 +696,7 @@
 			<key>HideSelf</key>
 			<false/>
 			<key>Resolution</key>
-			<string>1920x1080</string>
+			<string></string>
 			<key>ShowPicker</key>
 			<true/>
 			<key>Timeout</key>

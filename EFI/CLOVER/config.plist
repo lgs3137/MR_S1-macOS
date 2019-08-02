@@ -151,8 +151,14 @@
 			<dict>
 				<key>AAPL,slot-name</key>
 				<string>Internal</string>
+				<key>compatible</key>
+				<string>pci14e4,43b1</string>
+				<key>device_type</key>
+				<string>Airport Extreme</string>
 				<key>model</key>
-				<string>Intel Wireless 3168</string>
+				<string>Broadcom BCM94352z 802.11ac Wireless</string>
+				<key>name</key>
+				<string>Airport</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1d,0x0)</key>
 			<dict>
@@ -241,7 +247,7 @@
 		<key>ScreenResolution</key>
 		<string>1920x1080</string>
 		<key>Theme</key>
-		<string>MECHREVO</string>
+		<string>MSI</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
