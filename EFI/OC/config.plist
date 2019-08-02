@@ -634,7 +634,7 @@
 			<key>HideSelf</key>
 			<false/>
 			<key>Resolution</key>
-			<string>1920x1080</string>
+			<string></string>
 			<key>ShowPicker</key>
 			<true/>
 			<key>Timeout</key>

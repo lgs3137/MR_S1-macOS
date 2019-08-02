@@ -1,4 +1,4 @@
-# macOS Catalina for MECHREVO S1
+# macOS Catalina & Mojave for MECHREVO S1（and MSI PS42 8RB）
 
 - [Switch to Broadcom BCM94352z/DW1560](https://github.com/lgs3137/MR_S1-macOS/tree/BCM94352z) 
 - [Enable macOS HiDPI](https://github.com/lgs3137/MR_S1-macOS/tree/master/one-key-hidpi) 
@@ -35,6 +35,9 @@
 - [daliansky](https://github.com/daliansky) 
 
 ## Change Log:
+
+- 2019.08.02
+	- Update Clover5033 & Kext & OC & Themes.
 
 - 2019.07.25
 	- Update Clover5028 & Kext. | Fix Touchpad on macOS 10.15
