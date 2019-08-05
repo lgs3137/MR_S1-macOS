@@ -1,8 +1,10 @@
-# macOS Catalina & Mojave for MECHREVO S1（and MSI PS42 8RB）
+# macOS Catalina & Mojave for MECHREVO S1(MSI PS42 8RB)
 
-- [Switch to Broadcom BCM94352z/DW1560](https://github.com/lgs3137/MR_S1-macOS/tree/BCM94352z) 
+- [Switch to Broadcom BCM94352z](https://github.com/lgs3137/MR_S1-macOS/tree/BCM94352z) 
 - [Enable macOS HiDPI](https://github.com/lgs3137/MR_S1-macOS/tree/master/one-key-hidpi) 
 - [CPUFriend](https://github.com/daliansky/XiaoMi-Pro/tree/master/one-key-cpufriend) 
+
+- [How to Install from Windows | 安装教程](https://github.com/lgs3137/MR_S1-macOS/tree/master/Install) 
 
 ## 扣扣交流群：[45822629](https://jq.qq.com/?_wv=1027&k=5F5QsbT)
 
