@@ -68,8 +68,21 @@ EFI 引导工具：[BOOTICE](http://8dx.pc6.com/xjq6/BOOTICE_Tool.zip)
 
 ## BIOS 引导项设置
 
-未完待续。。。
+1. 开机狂按 F2 进入 BIOS 设置界面（操作只用到上下左右、回车确认、ESC返回键），如图选择 “Boot” 把 Fast Boot 修改为 “Disable”，如图所示，进入“UEFI Hard Disk Driver BBS Priorites”，把 “Boot Option #1” 设置为 “Clover”，其他顺序随意可参考图片所示。
 
+![0About](ScreenShot/6_1.jpg)
+![0About](ScreenShot/6_2.jpg)
 
+2. 返回 “Boot” 菜单页，把 “Boot Option #1” 设置为 “Hard Disk:Clover” 如图所示。
 
+ ![0About](ScreenShot/6_3.jpg)
 
+ 3. 切换到 “Security” 菜单页，进入 "Secure Boot"子菜单，把 “Secure Boot Support” 修改为 “Disable”，如图所示。
+
+![0About](ScreenShot/6_4.jpg)
+![0About](ScreenShot/6_5.jpg)
+
+4. 切换到 “Save & Exit” 菜单页，选择 “Save Changes and Reset”，确认后自动重启进入 Clover 引导了。
+（如果想临时使用 OC 引导 macOS 的话，开机狂按 F10 进入快速引导界面，直接选择 OC 进行引导即可）
+
+![0About](ScreenShot/6_6.jpg)
