@@ -1,7 +1,7 @@
-# macOS Catalina & Mojave for MECHREVO S1(MSI PS42 8RB)
+# MECHREVO S1(MSI PS42 8RB) for macOS Catalina & Mojave
 
 - [Switch to Broadcom BCM94352z](https://github.com/lgs3137/MR_S1-macOS/tree/BCM94352z) 
-- [Enable macOS HiDPI](https://github.com/lgs3137/MR_S1-macOS/tree/master/one-key-hidpi) 
+- [Enable macOS HiDPI](https://github.com/xzhih/one-key-hidpi) 
 - [CPUFriend](https://github.com/daliansky/XiaoMi-Pro/tree/master/one-key-cpufriend) 
 
 - [How to Install from Windows | 安装教程](https://github.com/lgs3137/MR_S1-macOS/tree/master/Install) 
@@ -37,6 +37,10 @@
 - [daliansky](https://github.com/daliansky) 
 
 ## Change Log:
+
+- 2019.08.06
+	- Update Clover5035 & Kext & OC.
+	- 默认Clover引导，若要使用 OC 引导，需在Win下手动添加 \EFI\BOOT\OC.efi 为引导项即可选择进入OC.
 
 - 2019.08.02
 	- Update Clover5033 & Kext & OC & Themes.

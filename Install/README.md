@@ -60,7 +60,7 @@ EFI 引导工具：[BOOTICE](http://8dx.pc6.com/xjq6/BOOTICE_Tool.zip)
 
 
 2. （如果你不想使用 OC 引导macOS，可以不添加）
-重复上面的步骤，添加文件路径为：EFI\BOOT\BOOTX64.efi 的文件，修改标题为“OC”，点击“保存当前启动项设置”。
+重复上面的步骤，添加文件路径为：EFI\BOOT\OC.efi 的文件，修改标题为“OC”，点击“保存当前启动项设置”。
 
 ![0About](ScreenShot/5_3.jpg)
 

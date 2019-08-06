@@ -166,6 +166,26 @@
 			<false/>
 		</dict>
 	</dict>
+	<key>Booter</key>
+	<dict>
+		<key>Quirks</key>
+		<dict>
+			<key>DiscardAppleS4Map</key>
+			<false/>
+			<key>EnableAppleSmSlide</key>
+			<false/>
+			<key>ForceExitBootServices</key>
+			<false/>
+			<key>ProtectCsmRegion</key>
+			<false/>
+			<key>SetupAppleMap</key>
+			<true/>
+			<key>SetupAppleSlide</key>
+			<true/>
+			<key>ShrinkMemoryMap</key>
+			<false/>
+		</dict>
+	</dict>
 	<key>DeviceProperties</key>
 	<dict>
 		<key>Add</key>
@@ -829,8 +849,8 @@
 			<string>HFSPlus.efi</string>
 			<string>ApfsDriverLoader.efi</string>
 			<string>AppleUiSupport.efi</string>
-			<string>AptioInputFix.efi</string>
-			<string>AptioMemoryFix.efi</string>
+			<string>AppleGenericInput.efi</string>
+			<string>FwRuntimeServices.efi</string>
 			<string>VirtualSmc.efi</string>
 		</array>
 		<key>Protocols</key>
@@ -846,6 +866,8 @@
 		</dict>
 		<key>Quirks</key>
 		<dict>
+			<key>AvoidHighAlloc</key>
+			<false/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
 			<key>IgnoreInvalidFlexRatio</key>
