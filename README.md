@@ -1,4 +1,4 @@
-# macOS Catalina & Mojave for MECHREVO S1 (MSI PS42 8RB)
+# macOS Catalina & Mojave for MECHREVO S1(MSI PS42 8RB)
 
 - [Switch to Broadcom BCM94352z](https://github.com/lgs3137/MR_S1-macOS/tree/BCM94352z) 
 - [Enable macOS HiDPI](https://github.com/lgs3137/MR_S1-macOS/tree/master/one-key-hidpi) 
