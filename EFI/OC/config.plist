@@ -731,8 +731,28 @@
 		<true/>
 		<key>DataHub</key>
 		<dict>
+			<key>ARTFrequency</key>
+			<integer>0</integer>
 			<key>BoardProduct</key>
 			<string>Mac-B4831CEBD52A0C4C</string>
+			<key>BoardRevision</key>
+			<data>AQ==</data>
+			<key>DevicePathsSupported</key>
+			<integer>1</integer>
+			<key>FSBFrequency</key>
+			<integer>0</integer>
+			<key>InitialTSC</key>
+			<integer>0</integer>
+			<key>PlatformName</key>
+			<string>platform</string>
+			<key>SmcBranch</key>
+			<data>AAAAAAAAAAA=</data>
+			<key>SmcPlatform</key>
+			<data>AAAAAAAAAAA=</data>
+			<key>SmcRevision</key>
+			<data>ATkPAAAF</data>
+			<key>StartupPowerEvents</key>
+			<integer>0</integer>
 			<key>SystemProductName</key>
 			<string>MacBookPro14,1</string>
 			<key>SystemSerialNumber</key>
@@ -744,6 +764,10 @@
 		<dict>
 			<key>MLB</key>
 			<string>C02752306GUF1171H</string>
+			<key>ROM</key>
+			<string>137A34AB23E2</string>
+			<key>SpoofVendor</key>
+			<true/>
 			<key>SystemProductName</key>
 			<string>MacBookPro14,1</string>
 			<key>SystemSerialNumber</key>
@@ -753,12 +777,16 @@
 		</dict>
 		<key>PlatformNVRAM</key>
 		<dict>
+			<key>BID</key>
+			<string>Mac-B4831CEBD52A0C4C</string>
 			<key>FirmwareFeatures</key>
-			<string>FC0FE137 00000000</string>
+			<string>37E10FFC 00000000</string>
 			<key>FirmwareFeaturesMask</key>
-			<string>FF1FFF3F 00000000</string>
+			<string>3FFF1FFF 00000000</string>
 			<key>MLB</key>
 			<string>C02752306GUF1171H</string>
+			<key>ROM</key>
+			<string>137A34AB23E2</string>
 		</dict>
 		<key>SMBIOS</key>
 		<dict>
@@ -768,14 +796,6 @@
 			<string>Apple Inc.</string>
 			<key>BIOSVersion</key>
 			<string>196.0.0.0.0</string>
-			<key>BiosReleaseDate</key>
-			<string>05/28/2018</string>
-			<key>BiosVendor</key>
-			<string>Apple Inc.</string>
-			<key>BiosVersion</key>
-			<string>MBP141.88Z.F000.B00.1905281616</string>
-			<key>Board-ID</key>
-			<string>Mac-B4831CEBD52A0C4C</string>
 			<key>BoardAssetTag</key>
 			<string></string>
 			<key>BoardLocationInChassis</key>
@@ -800,20 +820,20 @@
 			<integer>9</integer>
 			<key>ChassisVersion</key>
 			<string>Mac-B4831CEBD52A0C4C</string>
-			<key>Family</key>
-			<string>MacBook Pro</string>
 			<key>FirmwareFeatures</key>
-			<string>FC0FE137 00000000</string>
+			<string>37E10FFC 00000000</string>
 			<key>FirmwareFeaturesMask</key>
-			<string>FF1FFF3F 00000000</string>
-			<key>LocationInChassis</key>
-			<string>Part Component</string>
-			<key>Manufacturer</key>
-			<string>Apple Inc.</string>
+			<string>3FFF1FFF 00000000</string>
+			<key>MemoryFormFactor</key>
+			<integer>9</integer>
 			<key>Mobile</key>
 			<true/>
 			<key>PlatformFeature</key>
 			<integer>26</integer>
+			<key>ProcessorType</key>
+			<integer>0</integer>
+			<key>SmcVersion</key>
+			<data>AAAAAAAAAAAAAAAAAAAAAA==</data>
 			<key>SystemFamily</key>
 			<string>MacBook Pro</string>
 			<key>SystemManufacturer</key>
