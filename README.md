@@ -37,6 +37,9 @@
 
 ## Change Log:
 
+- 2019.08.13
+	- Update Clover5047 & Kext & OC.
+
 - 2019.08.06
 	- Update Clover5035 & Kext & OC.
 	- 默认Clover引导，若要使用 OC 引导，需在Win下手动添加 \EFI\BOOT\OC.efi 为引导项即可选择进入OC.
