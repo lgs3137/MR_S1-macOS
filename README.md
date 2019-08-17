@@ -38,6 +38,9 @@
 
 ## Change Log:
 
+- 2019.08.17
+	- Update Clover5050 & Kext & OC0.0.5. | Fix TypeC USB3.0 speed.
+
 - 2019.08.13
 	- Update Clover5047 & Kext & OC.
 
