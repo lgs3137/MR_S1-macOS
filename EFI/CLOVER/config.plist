@@ -368,8 +368,6 @@
 		<string>C02VW1VTHV29</string>
 		<key>SmUUID</key>
 		<string>AEA18B07-D5AA-4B00-A64E-A7E9A844A961</string>
-		<key>Trust</key>
-		<true/>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
