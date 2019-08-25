@@ -88,6 +88,14 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>USB power injection and customization</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-USB.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>Inject plugin-type=1</string>
 				<key>Enabled</key>
 				<true/>
@@ -170,17 +178,23 @@
 	<dict>
 		<key>Quirks</key>
 		<dict>
-			<key>DiscardAppleS4Map</key>
+			<key>AvoidRuntimeDefrag</key>
+			<true/>
+			<key>DisableVariableWrite</key>
 			<false/>
-			<key>EnableAppleSmSlide</key>
+			<key>DiscardHibernateMap</key>
 			<false/>
+			<key>EnableSafeModeSlide</key>
+			<true/>
+			<key>EnableWriteUnprotector</key>
+			<true/>
 			<key>ForceExitBootServices</key>
 			<false/>
 			<key>ProtectCsmRegion</key>
 			<false/>
-			<key>SetupAppleMap</key>
+			<key>ProvideCustomSlide</key>
 			<true/>
-			<key>SetupAppleSlide</key>
+			<key>SetupVirtualMap</key>
 			<true/>
 			<key>ShrinkMemoryMap</key>
 			<false/>
@@ -479,27 +493,13 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>SATA-unsupported.kext</string>
-				<key>Comment</key>
-				<string>SATA</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string></string>
-				<key>MatchKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
-				<string>USBPorts.kext</string>
+				<string>USBInjectAll.kext</string>
 				<key>Comment</key>
 				<string>USB Ports</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string></string>
+				<string>Contents/MacOS/USBInjectAll</string>
 				<key>MatchKernel</key>
 				<string></string>
 				<key>PlistPath</key>
@@ -703,6 +703,8 @@
 	</dict>
 	<key>Misc</key>
 	<dict>
+		<key>BlessOverride</key>
+		<array/>
 		<key>Boot</key>
 		<dict>
 			<key>ConsoleBehaviourOs</key>
@@ -869,7 +871,7 @@
 			<key>BoardSerialNumber</key>
 			<string>C02752306GUF1171H</string>
 			<key>BoardType</key>
-			<integer>10</integer>
+			<integer>11</integer>
 			<key>BoardVersion</key>
 			<string>MacBookPro14,1</string>
 			<key>ChassisAssetTag</key>
@@ -909,9 +911,7 @@
 			<key>SystemUUID</key>
 			<string>AEA18B07-D5AA-4B00-A64E-A7E9A844A961</string>
 			<key>SystemVersion</key>
-			<string>1.0</string>
-			<key>Trust</key>
-			<true/>
+			<string>1.1</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -928,7 +928,7 @@
 		<true/>
 		<key>Drivers</key>
 		<array>
-			<string>HFSPlus.efi</string>
+			<string>HfsPlus.efi</string>
 			<string>ApfsDriverLoader.efi</string>
 			<string>AppleUiSupport.efi</string>
 			<string>AppleGenericInput.efi</string>
@@ -950,6 +950,8 @@
 		<dict>
 			<key>AvoidHighAlloc</key>
 			<false/>
+			<key>ClearScreenOnModeSwitch</key>
+			<false/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
 			<key>IgnoreInvalidFlexRatio</key>
@@ -959,7 +961,9 @@
 			<key>ProvideConsoleGop</key>
 			<false/>
 			<key>ReleaseUsbOwnership</key>
-			<true/>
+			<false/>
+			<key>ReplaceTabWithSpace</key>
+			<false/>
 			<key>RequestBootVarRouting</key>
 			<false/>
 			<key>SanitiseClearScreen</key>
