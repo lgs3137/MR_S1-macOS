@@ -38,6 +38,9 @@
 
 ## Change Log:
 
+- 2019.09.04
+	- Update Clover5064 & Kext & OC.
+
 - 2019.08.25
 	- Update Clover5056 & Kext & OC.
 
