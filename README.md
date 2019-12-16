@@ -37,6 +37,9 @@
 
 ## Change Log:
 
+- 2019.12.16
+	- Update config.plist.
+
 - 2019.12.15
 	- Update Clover5100 & Kext & OC0.5.4.
 
