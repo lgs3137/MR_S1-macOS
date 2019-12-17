@@ -8,47 +8,15 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>Fake ambient light sensor device</string>
+				<string>OSYS</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-ALS0.aml</string>
+				<string>SSDT-OSYS.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Add DMAC device</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-DMAC.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Add EC device</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-EC.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Fix instant wake</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-GPRW.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Disable HPET device</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-HPET.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Add MCHC device</string>
+				<string>MCHC</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -56,15 +24,31 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Add MEM2 device</string>
+				<string>DMAC</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-MEM2.aml</string>
+				<string>SSDT-DMAC.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Add PMCR device</string>
+				<string>HPTE</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-HPTE.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>EC</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-EC.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>PMCR</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -72,7 +56,23 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Add PNLF device</string>
+				<string>SBUS</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-SBUS.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>PR00</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-PR00.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>PNLF</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -80,27 +80,35 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Fake an ethernet card, pair with NullEthernet.kext</string>
+				<string>SLPB</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-RMNE.aml</string>
+				<string>SSDT-SLPB.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>USB power injection and customization</string>
+				<string>GPRW</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-GPRW.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>RMCF</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-RMCF.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>USB</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
 				<string>SSDT-USB.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Inject plugin-type=1</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-XCPM.aml</string>
 			</dict>
 		</array>
 		<key>Block</key>
@@ -110,7 +118,7 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>Rename Method(GPRW,2,N) to XPRW, pair with SSDT-GPRW.aml (Instant Wake)</string>
+				<string>GPRW to XPRW</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -125,32 +133,6 @@
 				<data></data>
 				<key>Replace</key>
 				<data>WFBSVwI=</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data></data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Rename MATH._STA and LDR2._STA to XSTA</string>
-				<key>Count</key>
-				<integer>1</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>X1NUQQCgDZNQ</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>OemTableId</key>
-				<data></data>
-				<key>Replace</key>
-				<data>WFNUQQCgDZNQ</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -224,6 +206,8 @@
 				<data>AQAAAA==</data>
 				<key>enable-lspcon-support</key>
 				<data>AQAAAA==</data>
+				<key>framebuffer-flags</key>
+				<data>CwsgAA==</data>
 				<key>framebuffer-patch-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con1-enable</key>
@@ -528,22 +512,6 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/HibernationFixup</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
-				<string>NullEthernet.kext</string>
-				<key>Comment</key>
-				<string>Fake an ethernet card, pair with SSDT-RMNE.aml</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/NullEthernet</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>

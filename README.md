@@ -38,6 +38,9 @@
 
 ## Change Log:
 
+- 2019.12.17
+	- Update Hotpatch & config.plist.
+
 - 2019.12.16
 	- Update config.plist.
 
