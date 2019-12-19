@@ -38,6 +38,9 @@
 
 ## Change Log:
 
+- 2019.12.19
+	- Update Kext & Back to config.plist about WhateverGreen.kext for HDMI.
+
 - 2019.12.17
 	- Update Hotpatch & config.plist.
 
