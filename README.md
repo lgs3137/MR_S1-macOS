@@ -37,6 +37,9 @@
 
 ## Change Log:
 
+- 2019.12.26
+	- Update Clover5101 & Kext.
+
 - 2019.12.19
 	- Update Kext & Back to config.plist about WhateverGreen.kext for HDMI.
 
