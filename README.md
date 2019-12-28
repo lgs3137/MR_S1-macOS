@@ -1,8 +1,9 @@
 # MECHREVO S1(MSI PS42 8RB) for macOS Catalina & Mojave
 
-- [Switch to Broadcom BCM94352z](https://github.com/lgs3137/MR_S1-macOS/tree/BCM94352z) 
-- [Enable macOS HiDPI](https://github.com/lgs3137/MR_S1-macOS/tree/master/one-key-hidpi) 
-- [CPUFriend](https://github.com/daliansky/XiaoMi-Pro/tree/master/one-key-cpufriend) 
+- [Flash MSI BIOS (可选：微星BIOS)](https://github.com/lgs3137/MR_S1-macOS/tree/BIOS) 
+- [Switch to Broadcom BCM94352z (可选：网卡BCM94352z等)](https://github.com/lgs3137/MR_S1-macOS/tree/BCM94352z) 
+- [Enable macOS HiDPI (可选：开启HiDPI)](https://github.com/lgs3137/MR_S1-macOS/tree/master/one-key-hidpi) 
+- [CPUFriend (可选：默认均衡模式)](https://github.com/daliansky/XiaoMi-Pro/tree/master/one-key-cpufriend) 
 
 - [How to Install from Windows | 安装教程](https://github.com/lgs3137/MR_S1-macOS/tree/master/Install) 
 
