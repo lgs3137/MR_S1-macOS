@@ -8,23 +8,23 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>OSYS</string>
+				<string>Fake ambient light sensor device</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-OSYS.aml</string>
+				<string>SSDT-ALS0.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>MCHC</string>
+				<string>Disable discrete graphics card</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-MCHC.aml</string>
+				<string>SSDT-DDGPU.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>DMAC</string>
+				<string>Add DMAC device</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -32,15 +32,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>HPTE</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-HPTE.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>EC</string>
+				<string>Add EC device</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -48,47 +40,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>PMCR</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-PMCR.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SBUS</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-SBUS.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>PR00</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-PR00.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>PNLF</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-PNLF.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SLPB</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-SLPB.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>GPRW</string>
+				<string>Fix instant wake</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -96,19 +48,75 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>RMCF</string>
+				<string>Disable HPET device</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-RMCF.aml</string>
+				<string>SSDT-HPET.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>USB</string>
+				<string>Add MCHC device</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-MCHC.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Add MEM2 device</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-MEM2.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Add PMCR device</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-PMCR.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Add PNLF device</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-PNLF.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Customize VoodooPS2Keyboard</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-PS2K.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>USB power injection and customization</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
 				<string>SSDT-USB.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Inject plugin-type=1</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-XCPM.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Add SBUS device</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-SBUS.aml</string>
 			</dict>
 		</array>
 		<key>Block</key>
@@ -118,7 +126,7 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>GPRW to XPRW</string>
+				<string>Rename Method(GPRW,2,N) to XPRW, pair with SSDT-GPRW.aml (Instant Wake)</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -133,6 +141,32 @@
 				<data></data>
 				<key>Replace</key>
 				<data>WFBSVwI=</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data></data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Rename MATH._STA and LDR2._STA to XSTA</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>X1NUQQCgDZNQ</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data></data>
+				<key>Replace</key>
+				<data>WFNUQQCgDZNQ</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -204,8 +238,6 @@
 				<data>AAAAAAAAAAE=</data>
 				<key>device-id</key>
 				<data>FlkAAA==</data>
-				<key>disable-external-gpu</key>
-				<data>AQAAAA==</data>
 				<key>framebuffer-con1-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con1-pipe</key>
@@ -258,7 +290,7 @@
 				<key>AAPL,slot-name</key>
 				<string>Internal</string>
 				<key>model</key>
-				<string>Intel Sunrise Point-LP PCI Express Root Port #5</string>
+				<string>NVIDIA GeForce MX150</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1c,0x3)</key>
 			<dict>
@@ -646,7 +678,7 @@
 			<key>ConsoleMode</key>
 			<string></string>
 			<key>HibernateMode</key>
-			<string>None</string>
+			<string>Auto</string>
 			<key>HideSelf</key>
 			<true/>
 			<key>PollAppleHotKeys</key>
