@@ -24,10 +24,22 @@
 				<dict>
 					<key>Comment</key>
 					<string>Rename Method(GPRW,2,N) to XPRW, pair with SSDT-GPRW.aml (Instant Wake)</string>
+					<key>Disabled</key>
+					<false/>
 					<key>Find</key>
 					<data>R1BSVwI=</data>
 					<key>Replace</key>
 					<data>WFBSVwI=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Rename MATH._STA and LDR2._STA to XSTA</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X1NUQQCgDZNQ</data>
+					<key>Replace</key>
+					<data>WFNUQQCgDZNQ</data>
 				</dict>
 			</array>
 		</dict>
@@ -47,12 +59,14 @@
 		<string>LastBootedVolume</string>
 		<key>Legacy</key>
 		<string>PBR</string>
-		<key>NeverHibernate</key>
-		<true/>
 		<key>NoEarlyProgress</key>
 		<true/>
+		<key>Secure</key>
+		<false/>
 		<key>Timeout</key>
 		<integer>4</integer>
+		<key>HibernationFixup</key>
+		<true/>
 	</dict>
 	<key>Devices</key>
 	<dict>
@@ -75,8 +89,6 @@
 				<data>AAAAAAAAAAE=</data>
 				<key>device-id</key>
 				<data>FlkAAA==</data>
-				<key>disable-external-gpu</key>
-				<data>AQAAAA==</data>
 				<key>framebuffer-con1-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con1-pipe</key>
@@ -129,7 +141,7 @@
 				<key>AAPL,slot-name</key>
 				<string>Internal</string>
 				<key>model</key>
-				<string>Intel Sunrise Point-LP PCI Express Root Port #5</string>
+				<string>NVIDIA GeForce MX150</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1c,0x3)</key>
 			<dict>
@@ -240,7 +252,44 @@
 		</dict>
 	</dict>
 	<key>KernelAndKextPatches</key>
-	<dict/>
+	<dict>
+		<key>AppleRTC</key>
+		<true/>
+		<key>PanicNoKextDump</key>
+		<true/>
+		<key>ForceKextsToLoad</key>
+		<array>
+			<string>\System\Library\Extensions\IOGraphicsFamily.kext</string>
+		</array>
+		<key>KextsToPatch</key>
+		<array>
+			<dict>
+				<key>Comment</key>
+				<string>Enable TRIM for SSD</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Name</key>
+				<string>com.apple.iokit.IOAHCIBlockStorage</string>
+				<key>Find</key>
+				<data>AEFQUExFIFNTRAA=</data>
+				<key>Replace</key>
+				<data>AAAAAAAAAAAAAAA=</data>
+			</dict>
+		</array>
+		<key>KernelToPatch</key>
+		<array>
+			<dict>
+				<key>Comment</key>
+				<string>MSR 0xE2 _xcpm_idle instant reboot(c) Pike R. Alpha</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>ILniAAAADzA=</data>
+				<key>Replace</key>
+				<data>ILniAAAAkJA=</data>
+			</dict>
+		</array>
+	</dict>
 	<key>RtVariables</key>
 	<dict>
 		<key>CsrActiveConfig</key>

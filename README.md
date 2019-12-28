@@ -37,6 +37,9 @@
 
 ## Change Log:
 
+- 2019.12.28
+	- Update Hotpatch & config.plist.
+
 - 2019.12.26
 	- Update Clover5101 & Kext.
 
