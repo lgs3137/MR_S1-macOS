@@ -39,6 +39,10 @@
 
 ## Change Log:
 
+- 2020.02.01
+	- Update Clover5103 & Kext & OC0.5.5.
+	- 新增 MSIECControl 可控制CPU风扇的6个档位转速，原理参考Win下控制软件高级模式的6个档位，例如：MSIECControl 0 30 50 60 80 100
+
 - 2019.12.28
 	- Update Hotpatch & config.plist.
 
