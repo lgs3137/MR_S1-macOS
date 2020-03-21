@@ -27,7 +27,7 @@
 
 * Non-working
    * GPU (Nvidia MX150/GTX)
-   * WIFI (Intel® Dual Band Wireless-AC 3168)
+   * ~WIFI (Intel® Dual Band Wireless-AC 3168)~ [zxystd基于OpenBSD的macOS英特尔网卡驱动](https://github.com/RehabMan) 
    * SD Card Reader (Realtek RTS5129)
    * Fingerprint
 
