@@ -4,21 +4,14 @@
 <dict>
 	<key>ACPI</key>
 	<dict>
+		<key>AutoMerge</key>
+		<true/>
+		<key>FixHeaders</key>
+		<true/>
 		<key>DSDT</key>
 		<dict>
-			<key>Fixes</key>
-			<dict>
-				<key>AddHDMI</key>
-				<false/>
-				<key>AddIMEI</key>
-				<false/>
-				<key>FixDisplay</key>
-				<false/>
-				<key>FixHDA</key>
-				<false/>
-				<key>FixIntelGfx</key>
-				<false/>
-			</dict>
+			<key>DropOEM_DSM</key>
+			<false/>
 			<key>Patches</key>
 			<array>
 				<dict>
@@ -31,25 +24,20 @@
 					<key>Replace</key>
 					<data>WFBSVwI=</data>
 				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Rename MATH._STA and LDR2._STA to XSTA</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>X1NUQQCgDZNQ</data>
-					<key>Replace</key>
-					<data>WFNUQQCgDZNQ</data>
-				</dict>
 			</array>
 		</dict>
-		<key>DropTables</key>
-		<array>
+		<key>SSDT</key>
+		<dict>
+			<key>DropOem</key>
+			<false/>
+			<key>Generate</key>
 			<dict>
-				<key>Signature</key>
-				<string>DMAR</string>
+				<key>PluginType</key>
+				<false/>
 			</dict>
-		</array>
+			<key>NoOemTableId</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>Boot</key>
 	<dict>
@@ -75,8 +63,6 @@
 			<key>Inject</key>
 			<string>No</string>
 		</dict>
-		<key>Inject</key>
-		<false/>
 		<key>Properties</key>
 		<dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
@@ -87,14 +73,30 @@
 				<data>AAAAAAAAAAE=</data>
 				<key>device-id</key>
 				<data>FlkAAA==</data>
+				<key>force-online</key>
+				<data>AQAAAA==</data>
+				<key>force-online-framebuffers</key>
+				<data>AAAAAAAAAAE=</data>
+				<key>framebuffer-con0-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con0-flags</key>
+				<data>mAQAAA==</data>
 				<key>framebuffer-con1-enable</key>
 				<data>AQAAAA==</data>
+				<key>framebuffer-con1-flags</key>
+				<data>xwMAAA==</data>
 				<key>framebuffer-con1-pipe</key>
 				<data>CgAAAA==</data>
 				<key>framebuffer-con1-type</key>
 				<data>AAgAAA==</data>
+				<key>framebuffer-con2-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con2-flags</key>
+				<data>xwMAAA==</data>
 				<key>framebuffer-fbmem</key>
 				<data>AACQAA==</data>
+				<key>framebuffer-flags</key>
+				<data>CwfjAA==</data>
 				<key>framebuffer-patch-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-stolenmem</key>
@@ -106,8 +108,19 @@
 				<integer>66</integer>
 			</dict>
 		</dict>
-		<key>UseIntelHDMI</key>
-		<false/>
+		<key>SetIntelBacklight</key>
+		<true/>
+		<key>SetIntelMaxBacklight</key>
+		<true/>
+		<key>USB</key>
+		<dict>
+			<key>FixOwnership</key>
+			<true/>
+			<key>HighCurrent</key>
+			<false/>
+			<key>Inject</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>GUI</key>
 	<dict>
@@ -142,6 +155,11 @@
 	</dict>
 	<key>Graphics</key>
 	<dict>
+		<key>EDID</key>
+		<dict>
+			<key>Inject</key>
+			<true/>
+		</dict>
 		<key>Inject</key>
 		<dict>
 			<key>ATI</key>
@@ -153,7 +171,42 @@
 		</dict>
 	</dict>
 	<key>KernelAndKextPatches</key>
-	<dict/>
+	<dict>
+		<key>AppleRTC</key>
+		<true/>
+		<key>PanicNoKextDump</key>
+		<true/>
+		<key>KextsToPatch</key>
+		<array>
+			<dict>
+				<key>Comment</key>
+				<string>Enable TRIM for SSD</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Name</key>
+				<string>com.apple.iokit.IOAHCIBlockStorage</string>
+				<key>Find</key>
+				<data>AEFQUExFIFNTRAA=</data>
+				<key>Replace</key>
+				<data>AAAAAAAAAAAAAAA=</data>
+			</dict>
+		</array>
+		<key>KernelToPatch</key>
+		<array>
+			<dict>
+				<key>Comment</key>
+				<string>Disable setPowerState panic with setpowerstate_panic=0 boot-args on 10.15 (credit vit9696)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.15</string>
+				<key>Find</key>
+				<data>Y29tLmFwcGxlAA==</data>
+				<key>Replace</key>
+				<data>bm90LmFwcGxlAA==</data>
+			</dict>
+		</array>
+	</dict>
 	<key>RtVariables</key>
 	<dict>
 		<key>CsrActiveConfig</key>
@@ -166,11 +219,11 @@
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>05/28/2019</string>
+		<string>01/31/2020</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MBP141.88Z.F000.B00.1905281616</string>
+		<string>MBP141.88Z.F000.B00.2001311754</string>
 		<key>Board-ID</key>
 		<string>Mac-B4831CEBD52A0C4C</string>
 		<key>BoardManufacturer</key>
@@ -180,21 +233,21 @@
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
-		<string>1.0</string>
+		<string>MacBookPro14,1</string>
 		<key>ChassisAssetTag</key>
 		<string>MacBook-Aluminum</string>
 		<key>ChassisManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>ChassisType</key>
-		<string>0x09</string>
+		<string>0x9</string>
 		<key>EfiVersion</key>
-		<string>196.0.0.0.0</string>
+		<string>205.0.0.0.0</string>
 		<key>Family</key>
 		<string>MacBook Pro</string>
 		<key>FirmwareFeatures</key>
-		<string>0xFC0FE137</string>
+		<string>0xFC0FE176</string>
 		<key>FirmwareFeaturesMask</key>
-		<string>0xFF1FFF3F</string>
+		<string>0xFF1FFF7F</string>
 		<key>LocationInChassis</key>
 		<string>Part Component</string>
 		<key>Manufacturer</key>
@@ -209,6 +262,8 @@
 		<string>C02VW1VTHV29</string>
 		<key>SmUUID</key>
 		<string>AEA18B07-D5AA-4B00-A64E-A7E9A844A961</string>
+		<key>Trust</key>
+		<true/>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>

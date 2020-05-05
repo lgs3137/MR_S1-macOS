@@ -5,7 +5,9 @@
 	<key>Author</key>
 	<string>ClaudesTech</string>
 	<key>Description</key>
-	<string>MSI Notebook's theme</string>
+	<string>MSI Notebook&apos;s theme</string>
+	<key>Year</key>
+	<string>2019</string>
 	<key>Theme</key>
 	<dict>
 		<key>Anime</key>
@@ -82,7 +84,5 @@
 			<string>selection_small.png</string>
 		</dict>
 	</dict>
-	<key>Year</key>
-	<string>2019</string>
 </dict>
 </plist>

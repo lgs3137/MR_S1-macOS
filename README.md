@@ -39,6 +39,9 @@
 
 ## Change Log:
 
+- 2020.05.05
+	- Update Clover5115 & Kext & OC0.5.9.
+
 - 2020.04.01
 	- Update Clover5108 & Kext.
 
