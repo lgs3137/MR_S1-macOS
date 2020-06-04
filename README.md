@@ -4,6 +4,8 @@
 - [Switch to Broadcom BCM94352z (可选：网卡BCM94352z等)](https://github.com/lgs3137/MR_S1-macOS/tree/BCM94352z) 
 - [Enable macOS HiDPI (可选：开启HiDPI)](https://github.com/lgs3137/MR_S1-macOS/tree/master/one-key-hidpi) 
 - [CPUFriend (可选：默认均衡模式)](https://github.com/daliansky/XiaoMi-Pro/tree/master/one-key-cpufriend) 
+- [zxystd基于OpenBSD的macOS英特尔网卡驱动](https://github.com/zxystd/itlwm) 
+- [IntelBluetoothFirmware英特尔蓝牙驱动](https://github.com/zxystd/IntelBluetoothFirmware) 
 
 - [How to Install from Windows | 安装教程](https://github.com/lgs3137/MR_S1-macOS/tree/master/Install) 
 
@@ -27,7 +29,6 @@
 
 * Non-working
    * GPU (Nvidia MX150/GTX)
-   * ~WIFI (Intel® Dual Band Wireless-AC 3168)~ [zxystd基于OpenBSD的macOS英特尔网卡驱动](https://github.com/zxystd/itlwm) 
    * SD Card Reader (Realtek RTS5129)
    * Fingerprint
 
@@ -38,6 +39,9 @@
 - [daliansky](https://github.com/daliansky) 
 
 ## Change Log:
+
+- 2020.06.04
+	- Update Clover5118 & Kext & OC0.6.0.
 
 - 2020.05.05
 	- Update Clover5115 & Kext & OC0.5.9.
