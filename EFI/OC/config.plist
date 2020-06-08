@@ -308,22 +308,6 @@
                 </dict>
                 <dict>
                     <key>BundlePath</key>
-                    <string>VirtualSMC.kext/Contents/PlugIns/SMCLightSensor.kext</string>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/SMCLightSensor</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>BundlePath</key>
                     <string>VirtualSMC.kext/Contents/PlugIns/SMCProcessor.kext</string>
                     <key>Comment</key>
                     <string></string>
