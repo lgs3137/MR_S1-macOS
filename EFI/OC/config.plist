@@ -193,7 +193,9 @@
                 <key>ProtectUefiServices</key>
                 <false/>
                 <key>ProvideCustomSlide</key>
-                <false/>
+                <true/>
+                <key>ProvideMaxSlide</key>
+                <integer>0</integer>
                 <key>RebuildAppleMemoryMap</key>
                 <false/>
                 <key>SetupVirtualMap</key>
@@ -201,7 +203,7 @@
                 <key>SignalAppleOS</key>
                 <false/>
                 <key>SyncRuntimePermissions</key>
-                <false/>
+                <true/>
             </dict>
         </dict>
         <key>DeviceProperties</key>
@@ -239,7 +241,7 @@
                     <key>framebuffer-fbmem</key>
                     <data>AACQAA==</data>
                     <key>framebuffer-flags</key>
-                    <data>CwfjAA==</data>
+                    <data>CwfDAA==</data>
                     <key>framebuffer-patch-enable</key>
                     <data>AQAAAA==</data>
                     <key>framebuffer-stolenmem</key>
@@ -324,6 +326,22 @@
                 </dict>
                 <dict>
                     <key>BundlePath</key>
+                    <string>VirtualSMC.kext/Contents/PlugIns/SMCLightSensor.kext</string>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/SMCLightSensor</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>BundlePath</key>
                     <string>WhateverGreen.kext</string>
                     <key>Comment</key>
                     <string></string>
@@ -388,13 +406,29 @@
                 </dict>
                 <dict>
                     <key>BundlePath</key>
-                    <string>BrcmBluetoothInjector.kext</string>
+                    <string>AirportBrcmFixup.kext/Contents/PlugIns/AirPortBrcmNIC_Injector.kext</string>
                     <key>Comment</key>
                     <string></string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
                     <string></string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>BundlePath</key>
+                    <string>BrcmBluetoothInjector.kext</string>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/BrcmBluetoothInjector</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -459,22 +493,6 @@
                     <true/>
                     <key>ExecutablePath</key>
                     <string></string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>BundlePath</key>
-                    <string>NVMeFix.kext</string>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/NVMeFix</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -600,11 +618,40 @@
             <key>Emulate</key>
             <dict/>
             <key>Patch</key>
-            <array/>
+            <array>
+              <dict>
+                <key>Base</key>
+                <string>__ZN8AppleRTC18setupDateTimeAlarmEPK11RTCDateTime</string>
+                <key>Comment</key>
+                <string>Disable RTC wake scheduling</string>
+                <key>Count</key>
+                <integer>1</integer>
+                <key>Enabled</key>
+                <true/>
+                <key>Find</key>
+                <data></data>
+                <key>Identifier</key>
+                <string>com.apple.driver.AppleRTC</string>
+                <key>Limit</key>
+                <integer>0</integer>
+                <key>Mask</key>
+                <data></data>
+                <key>MaxKernel</key>
+                <string></string>
+                <key>MinKernel</key>
+                <string>19.0.0</string>
+                <key>Replace</key>
+                <data>ww==</data>
+                <key>ReplaceMask</key>
+                <data></data>
+                <key>Skip</key>
+                <integer>0</integer>
+              </dict>
+            </array>
             <key>Quirks</key>
             <dict>
                 <key>AppleCpuPmCfgLock</key>
-                <true/>
+                <false/>
                 <key>AppleXcpmCfgLock</key>
                 <true/>
                 <key>AppleXcpmExtraMsrs</key>
@@ -612,7 +659,7 @@
                 <key>AppleXcpmForceBoost</key>
                 <false/>
                 <key>CustomSMBIOSGuid</key>
-                <false/>
+                <true/>
                 <key>DisableIoMapper</key>
                 <true/>
                 <key>DisableRtcChecksum</key>
@@ -648,7 +695,7 @@
                 <key>HideAuxiliary</key>
                 <true/>
                 <key>PickerAttributes</key>
-                <integer>0</integer>
+                <integer>3</integer>
                 <key>PickerAudioAssist</key>
                 <false/>
                 <key>PickerMode</key>
@@ -689,8 +736,6 @@
                 <true/>
                 <key>AuthRestart</key>
                 <true/>
-                <key>BlacklistAppleUpdate</key>
-                <true/>
                 <key>BootProtect</key>
                 <string>Bootstrap</string>
                 <key>ExposeSensitiveData</key>
@@ -718,20 +763,6 @@
                     <key>Path</key>
                     <string>OpenShell.efi</string>
                 </dict>
-                <dict>
-                    <key>Arguments</key>
-                    <string></string>
-                    <key>Auxiliary</key>
-                    <true/>
-                    <key>Comment</key>
-                    <string>Clean NVRAM to reduce conflicts with other bootloaders</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Name</key>
-                    <string>Clean NVRAM</string>
-                    <key>Path</key>
-                    <string>CleanNvram.efi</string>
-                </dict>
             </array>
         </dict>
         <key>NVRAM</key>
@@ -741,7 +772,9 @@
                 <key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
                 <dict>
                     <key>boot-args</key>
-                    <string>darkwake=0 gfxrst=1</string>
+                    <string>darkwake=0 dart=0 gfxrst=1 -lilubetaall -disablegfxfirmware</string>
+                    <key>run-efi-updater</key>
+                    <string>No</string>
                     <key>csr-active-config</key>
                     <data>ZwAAAA==</data>
                 </dict>
@@ -751,6 +784,8 @@
                 <key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
                 <array>
                     <string>boot-args</string>
+                    <string>booter-fileset-basesystem</string>
+                    <string>booter-fileset-kernel</string>
                 </array>
             </dict>
             <key>LegacyEnable</key>
@@ -769,13 +804,13 @@
             <key>Generic</key>
             <dict>
                 <key>AdviseWindows</key>
-                <true/>
+                <false/>
                 <key>MLB</key>
                 <string>C02752306GUF1171H</string>
                 <key>ROM</key>
                 <data>ESIzRFVm</data>
                 <key>SpoofVendor</key>
-                <false/>
+                <true/>
                 <key>SystemProductName</key>
                 <string>MacBookPro14,1</string>
                 <key>SystemSerialNumber</key>
@@ -790,7 +825,7 @@
             <key>UpdateSMBIOS</key>
             <true/>
             <key>UpdateSMBIOSMode</key>
-            <string>Create</string>
+            <string>Custom</string>
         </dict>
         <key>UEFI</key>
         <dict>
@@ -798,6 +833,8 @@
             <dict>
                 <key>EnableJumpstart</key>
                 <true/>
+                <key>GlobalConnect</key>
+                <false/>
                 <key>HideVerbose</key>
                 <true/>
                 <key>JumpstartHotPlug</key>
@@ -876,6 +913,8 @@
                 <false/>
                 <key>TextRenderer</key>
                 <string>BuiltinGraphics</string>
+                <key>UgaPassThrough</key>
+                <false/>
             </dict>
             <key>ProtocolOverrides</key>
             <dict>
@@ -886,6 +925,8 @@
                 <key>AppleDebugLog</key>
                 <false/>
                 <key>AppleEvent</key>
+                <false/>
+                <key>AppleFramebufferInfo</key>
                 <false/>
                 <key>AppleImageConversion</key>
                 <false/>

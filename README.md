@@ -1,4 +1,4 @@
-# MECHREVO S1(MSI PS42 8RB) for macOS Catalina & Mojave
+# MECHREVO S1(MSI PS42 8RB) for macOS Big Sur beta2 & Catalina & Mojave
 
 - [Enable macOS HiDPI](https://github.com/xzhih/one-key-hidpi) 
 - [CPUFriend](https://github.com/daliansky/XiaoMi-Pro/tree/master/one-key-cpufriend) 
@@ -37,6 +37,9 @@
 - [daliansky](https://github.com/daliansky) 
 
 ## Change Log:
+
+- 2020.07.19
+	- Remove Clover & Update Kext & OC0.6.0 support macOS Big Sur beta2.
 
 - 2020.06.08
 	- Update Clover5119 & Kext.
