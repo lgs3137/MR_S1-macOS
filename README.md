@@ -1,4 +1,4 @@
-# MECHREVO S1(MSI PS42 8RB) for macOS Big Sur beta2 & Catalina & Mojave
+# MECHREVO S1(MSI PS42 8RB) for macOS Big Sur beta3 & Catalina & Mojave
 
 - ~[Flash MSI BIOS (可选：微星BIOS)](https://github.com/lgs3137/MR_S1-macOS/tree/BIOS)~
 - [Switch to Broadcom BCM94352z (可选：网卡BCM94352z等)](https://github.com/lgs3137/MR_S1-macOS/tree/BCM94352z) 
@@ -39,6 +39,9 @@
 - [daliansky](https://github.com/daliansky) 
 
 ## Change Log:
+
+- 2020.07.24
+	- Update Kext & config.plist support macOS Big Sur beta3.
 
 - 2020.07.19
 	- Remove Clover & Update Kext & OC0.6.0 support macOS Big Sur beta2.
