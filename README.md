@@ -1,4 +1,4 @@
-# MECHREVO S1(MSI PS42 8RB) for macOS Big Sur beta3 & Catalina & Mojave
+# MECHREVO S1(MSI PS42 8RB) for macOS Big Sur & Catalina
 
 - [Enable macOS HiDPI](https://github.com/xzhih/one-key-hidpi) 
 - [CPUFriend](https://github.com/daliansky/XiaoMi-Pro/tree/master/one-key-cpufriend) 
@@ -37,6 +37,9 @@
 - [daliansky](https://github.com/daliansky) 
 
 ## Change Log:
+
+- 2020.10.10
+	- Update Kext & OC0.6.3
 
 - 2020.07.24
 	- Update Kext & config.plist support macOS Big Sur beta3.
