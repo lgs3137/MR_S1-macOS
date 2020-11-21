@@ -5,7 +5,7 @@
 # 这个脚本是 https://github.com/xzhih/one-key-hidpi 的一个精简，谢谢@xzhih
 # 只支持机械革命S1 (dae,14d5)
 
-DISPLAYPATH="/System/Library/Displays/Contents/Resources/Overrides"
+DISPLAYPATH="/Library/Displays/Contents/Resources/Overrides"
 
 # 界面 (参考:https://github.com/xzhih/one-key-hidpi/master/hidpi.sh)
 function interface() {
