@@ -159,7 +159,7 @@
                 <key>RebaseRegions</key>
                 <false/>
                 <key>ResetHwSig</key>
-                <true/>
+                <false/>
                 <key>ResetLogoStatus</key>
                 <false/>
             </dict>
@@ -170,6 +170,8 @@
             <array/>
             <key>Quirks</key>
             <dict>
+                <key>AllowRelocationBlock</key>
+                <false/>
                 <key>AvoidRuntimeDefrag</key>
                 <true/>
                 <key>DevirtualiseMmio</key>
@@ -660,11 +662,31 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
+                    <string>System/Library/Extensions/corecapture.kext</string>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Identifier</key>
+                    <string>com.apple.driver.corecapture</string>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/corecapture</string>
+                    <key>MaxKernel</key>
+                    <string>19.99.99</string>
+                    <key>MinKernel</key>
+                    <string>17.0.0</string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
                     <string>System/Library/Extensions/IO80211Family.kext</string>
                     <key>Comment</key>
                     <string></string>
                     <key>Enabled</key>
-                    <false/>
+                    <true/>
                     <key>Identifier</key>
                     <string>com.apple.iokit.IO80211Family</string>
                     <key>ExecutablePath</key>
@@ -672,7 +694,7 @@
                     <key>MaxKernel</key>
                     <string>19.99.99</string>
                     <key>MinKernel</key>
-                    <string></string>
+                    <string>17.0.0</string>
                     <key>PlistPath</key>
                     <string>Contents/Info.plist</string>
                 </dict>
@@ -731,6 +753,8 @@
                 <key>ExtendBTFeatureFlags</key>
                 <false/>
                 <key>ExternalDiskIcons</key>
+                <false/>
+                <key>ForceSecureBootScheme</key>
                 <false/>
                 <key>IncreasePciBarSize</key>
                 <false/>
@@ -815,6 +839,8 @@
                 <integer>0</integer>
                 <key>AuthRestart</key>
                 <true/>
+                <key>BlacklistAppleUpdate</key>
+                <true/>
                 <key>BootProtect</key>
                 <string>Bootstrap</string>
                 <key>DmgLoading</key>
@@ -851,6 +877,10 @@
                     <string>UEFI Shell</string>
                     <key>Path</key>
                     <string>OpenShell.efi</string>
+                    <key>RealPath</key>
+                    <false/>
+                    <key>TextMode</key>
+                    <false/>
                 </dict>
             </array>
         </dict>
@@ -865,7 +895,7 @@
                     <key>run-efi-updater</key>
                     <string>No</string>
                     <key>csr-active-config</key>
-                    <data>ZwAAAA==</data>
+                    <data>MAAAAA==</data>
                 </dict>
             </dict>
             <key>Delete</key>
@@ -873,6 +903,7 @@
                 <key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
                 <array>
                     <string>boot-args</string>
+                    <string>csr-active-config</string>
                 </array>
             </dict>
             <key>LegacyEnable</key>
@@ -888,6 +919,8 @@
         <dict>
             <key>Automatic</key>
             <true/>
+            <key>CustomMemory</key>
+            <false/>
             <key>Generic</key>
             <dict>
                 <key>AdviseWindows</key>
@@ -960,6 +993,7 @@
                 <string>OpenRuntime.efi</string>
                 <string>OpenCanopy.efi</string>
                 <string>AudioDxe.efi</string>
+                <string>ExFatDxe.efi</string>
             </array>
             <key>Input</key>
             <dict>
@@ -989,6 +1023,8 @@
                 <key>ConsoleMode</key>
                 <string></string>
                 <key>DirectGopRendering</key>
+                <false/>
+                <key>ForceResolution</key>
                 <false/>
                 <key>IgnoreTextInGraphics</key>
                 <false/>

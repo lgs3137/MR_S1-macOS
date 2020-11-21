@@ -38,6 +38,9 @@
 
 ## Change Log:
 
+- 2020.11.21
+	- Update Kext & OC0.6.4
+
 - 2020.10.10
 	- Update Kext & OC0.6.3
 
