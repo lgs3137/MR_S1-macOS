@@ -147,7 +147,7 @@
                     <key>TableLength</key>
                     <integer>0</integer>
                     <key>TableSignature</key>
-                    <data></data>
+                    <data>RFNEVA==</data>
                 </dict>
             </array>
             <key>Quirks</key>
@@ -167,6 +167,8 @@
         <key>Booter</key>
         <dict>
             <key>MmioWhitelist</key>
+            <array/>
+            <key>Patch</key>
             <array/>
             <key>Quirks</key>
             <dict>
@@ -220,10 +222,10 @@
                     <data>AAAAAAAAAAE=</data>
                     <key>device-id</key>
                     <data>FlkAAA==</data>
+                    <key>enable-max-pixel-clock-override</key>
+                    <data>AQAAAA==</data>
                     <key>force-online</key>
                     <data>AQAAAA==</data>
-                    <key>force-online-framebuffers</key>
-                    <data>AAAAAAAAAAE=</data>
                     <key>framebuffer-con0-enable</key>
                     <data>AQAAAA==</data>
                     <key>framebuffer-con0-flags</key>
@@ -302,7 +304,25 @@
                     <key>Arch</key>
                     <string>x86_64</string>
                     <key>BundlePath</key>
-                    <string>VirtualSMC.kext/Contents/PlugIns/SMCBatteryManager.kext</string>
+                    <string>SMCLightSensor.kext</string>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/SMCLightSensor</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>x86_64</string>
+                    <key>BundlePath</key>
+                    <string>SMCBatteryManager.kext</string>
                     <key>Comment</key>
                     <string></string>
                     <key>Enabled</key>
@@ -320,31 +340,13 @@
                     <key>Arch</key>
                     <string>x86_64</string>
                     <key>BundlePath</key>
-                    <string>VirtualSMC.kext/Contents/PlugIns/SMCProcessor.kext</string>
+                    <string>SMCProcessor.kext</string>
                     <key>Comment</key>
                     <string></string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/SMCProcessor</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>x86_64</string>
-                    <key>BundlePath</key>
-                    <string>VirtualSMC.kext/Contents/PlugIns/SMCLightSensor.kext</string>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/SMCLightSensor</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -381,6 +383,24 @@
                     <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/AppleALC</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>x86_64</string>
+                    <key>BundlePath</key>
+                    <string>USBInjectAll.kext</string>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/USBInjectAll</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -730,6 +750,8 @@
                 <true/>
                 <key>PowerTimeoutKernelPanic</key>
                 <true/>
+                <key>SetApfsTrimTimeout</key>
+                <integer>-1</integer>
                 <key>ThirdPartyDrives</key>
                 <true/>
                 <key>XhciPortLimit</key>
@@ -758,11 +780,13 @@
                 <key>HideAuxiliary</key>
                 <true/>
                 <key>PickerAttributes</key>
-                <integer>3</integer>
+                <integer>17</integer>
                 <key>PickerAudioAssist</key>
                 <false/>
                 <key>PickerMode</key>
                 <string>External</string>
+                <key>PickerVariant</key>
+                <string>Modern</string>
                 <key>PollAppleHotKeys</key>
                 <true/>
                 <key>ShowPicker</key>
@@ -854,6 +878,8 @@
             <dict>
                 <key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
                 <dict>
+                    <key>StartupMute</key>
+                    <data>AQ==</data>
                     <key>boot-args</key>
                     <string>darkwake=0 gfxrst=1</string>
                     <key>run-efi-updater</key>
@@ -889,8 +915,8 @@
             <dict>
                 <key>AdviseWindows</key>
                 <true/>
-                <key>SystemMemoryStatus</key>
-                <string>Auto</string>
+                <key>MaxBIOSVersion</key>
+                <false/>
                 <key>MLB</key>
                 <string>C02752306GUF1171H</string>
                 <key>ProcessorType</key>
@@ -899,6 +925,8 @@
                 <data>ESIzRFVm</data>
                 <key>SpoofVendor</key>
                 <false/>
+                <key>SystemMemoryStatus</key>
+                <string>Auto</string>
                 <key>SystemProductName</key>
                 <string>MacBookPro14,1</string>
                 <key>SystemSerialNumber</key>
@@ -955,9 +983,6 @@
             <array>
                 <string>HfsPlus.efi</string>
                 <string>OpenRuntime.efi</string>
-                <string>OpenCanopy.efi</string>
-                <string>AudioDxe.efi</string>
-                <string>ExFatDxe.efi</string>
             </array>
             <key>Input</key>
             <dict>
@@ -1048,8 +1073,8 @@
             </dict>
             <key>Quirks</key>
             <dict>
-                <key>DeduplicateBootOrder</key>
-                <true/>
+                <key>DisableSecurityPolicy</key>
+                <false/>
                 <key>ExitBootServicesDelay</key>
                 <integer>0</integer>
                 <key>IgnoreInvalidFlexRatio</key>

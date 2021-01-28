@@ -40,6 +40,9 @@
 
 ## Change Log:
 
+- 2021.01.28
+	- Update Kext & OC0.6.6 | PrntScr Enable/Disable touchpad.
+
 - 2020.12.02
 	- Update Kext.
 
