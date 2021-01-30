@@ -973,9 +973,11 @@
                 <key>MinimumVolume</key>
                 <integer>20</integer>
                 <key>PlayChime</key>
-                <false/>
+                <string>Auto</string>
+                <key>SetupDelay</key>
+                <integer>0</integer>
                 <key>VolumeAmplifier</key>
-                <integer>125</integer>
+                <integer>128</integer>
             </dict>
             <key>ConnectDrivers</key>
             <true/>
