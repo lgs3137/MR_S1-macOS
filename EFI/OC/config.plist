@@ -790,6 +790,8 @@
                 <true/>
                 <key>PowerTimeoutKernelPanic</key>
                 <true/>
+                <key>ProvideCurrentCpuInfo</key>
+                <false/>
                 <key>SetApfsTrimTimeout</key>
                 <integer>-1</integer>
                 <key>ThirdPartyDrives</key>
@@ -830,7 +832,7 @@
                 <key>PickerMode</key>
                 <string>External</string>
                 <key>PickerVariant</key>
-                <string>Modern</string>
+                <string>Default</string>
                 <key>PollAppleHotKeys</key>
                 <true/>
                 <key>ShowPicker</key>
@@ -867,6 +869,8 @@
                 <true/>
                 <key>AllowSetDefault</key>
                 <true/>
+                <key>AllowToggleSip</key>
+                <true/>
                 <key>ApECID</key>
                 <integer>0</integer>
                 <key>AuthRestart</key>
@@ -902,7 +906,9 @@
                     <key>Comment</key>
                     <string>Not signed for security reasons</string>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
+                    <key>Flavour</key>
+                    <string>OpenShell:UEFIShell:Shell</string>
                     <key>Name</key>
                     <string>UEFI Shell</string>
                     <key>Path</key>
@@ -923,7 +929,7 @@
                     <key>StartupMute</key>
                     <data>AQ==</data>
                     <key>boot-args</key>
-                    <string>darkwake=0 brcmfx-country=#a</string>
+                    <string>darkwake=0 brcmfx-country=#a -lilubetaall</string>
                     <key>csr-active-config</key>
                     <data>AAAAAA==</data>
                     <key>run-efi-updater</key>
@@ -1076,7 +1082,7 @@
                 <key>ForceResolution</key>
                 <false/>
                 <key>GopPassThrough</key>
-                <false/>
+                <string>Disabled</string>
                 <key>IgnoreTextInGraphics</key>
                 <false/>
                 <key>ProvideConsoleGop</key>
@@ -1101,6 +1107,8 @@
                 <key>AppleBootPolicy</key>
                 <false/>
                 <key>AppleDebugLog</key>
+                <false/>
+                <key>AppleEg2Info</key>
                 <false/>
                 <key>AppleFramebufferInfo</key>
                 <false/>
@@ -1138,7 +1146,7 @@
                 <key>DisableSecurityPolicy</key>
                 <false/>
 		<key>EnableVectorAcceleration</key>
-		<true/>
+		<false/>
                 <key>ExitBootServicesDelay</key>
                 <integer>0</integer>
 		<key>ForgeUefiSupport</key>
