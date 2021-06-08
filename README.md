@@ -40,6 +40,9 @@
 
 ## Change Log:
 
+- 2021.06.08
+	- Update Kext & OC0.7.1 support macOS Monterey beta.
+
 - 2021.04.27
 	- Update Kext & OC0.6.9.
 
