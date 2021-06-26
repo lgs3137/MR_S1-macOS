@@ -1,4 +1,4 @@
-# MECHREVO S1(MSI PS42 8RB) for macOS Big Sur & Catalina
+# MECHREVO S1(MSI PS42 8RB) for macOS Monterey beta & macOS Big Sur & Catalina
 
 - [Enable macOS HiDPI](https://github.com/xzhih/one-key-hidpi) 
 - [CPUFriend](https://github.com/daliansky/XiaoMi-Pro/tree/master/one-key-cpufriend) 
