@@ -38,6 +38,9 @@
 
 ## Change Log:
 
+- 2021.06.28
+	- Update Kext & config.plist Compatible with macOS Monterey beta and Big Sur.
+
 - 2021.06.26
 	- Update Kext & OC0.7.1 support macOS Monterey beta.
 
