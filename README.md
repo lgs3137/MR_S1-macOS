@@ -29,7 +29,6 @@
 
 * Non-working
    * GPU (Nvidia MX150/GTX)
-   * SD Card Reader (Realtek RTS5129)
    * Fingerprint
 
 ## Credits
@@ -39,6 +38,9 @@
 - [daliansky](https://github.com/daliansky) 
 
 ## Change Log:
+
+- 2021.07.17
+	- Update Kext & OC0.7.2 support SD Card Reader(not work in macOS Monterey).
 
 - 2021.06.26
 	- Update Kext & OC0.7.1 support macOS Monterey beta.
