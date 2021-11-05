@@ -124,6 +124,10 @@
             <key>Patch</key>
             <array>
                 <dict>
+                    <key>Base</key>
+                    <string></string>
+                    <key>BaseSkip</key>
+                    <integer>0</integer>
                     <key>Comment</key>
                     <string>Rename Method(GPRW,2,N) to XPRW, pair with SSDT-GPRW.aml (Instant Wake)</string>
                     <key>Count</key>
@@ -206,6 +210,8 @@
                 <integer>0</integer>
                 <key>RebuildAppleMemoryMap</key>
                 <false/>
+                <key>ResizeAppleGpuBars</key>
+                <integer>-1</integer>
                 <key>SetupVirtualMap</key>
                 <true/>
                 <key>SignalAppleOS</key>
@@ -221,7 +227,7 @@
                 <key>PciRoot(0x0)/Pci(0x2,0x0)</key>
                 <dict>
                     <key>AAPL,ig-platform-id</key>
-                    <data>AAAWWQ==</data>
+                    <data>BQAcWQ==</data>
                     <key>complete-modeset-framebuffers</key>
                     <data>AAAAAAAAAAE=</data>
                     <key>device-id</key>
@@ -230,22 +236,16 @@
                     <data>AQAAAA==</data>
                     <key>force-online</key>
                     <data>AQAAAA==</data>
-                    <key>framebuffer-con0-enable</key>
-                    <data>AQAAAA==</data>
-                    <key>framebuffer-con0-flags</key>
-                    <data>mAQAAA==</data>
                     <key>framebuffer-con1-enable</key>
                     <data>AQAAAA==</data>
-                    <key>framebuffer-con1-flags</key>
-                    <data>xwMAAA==</data>
                     <key>framebuffer-con1-pipe</key>
                     <data>CgAAAA==</data>
                     <key>framebuffer-con1-type</key>
                     <data>AAgAAA==</data>
                     <key>framebuffer-con2-enable</key>
                     <data>AQAAAA==</data>
-                    <key>framebuffer-con2-flags</key>
-                    <data>xwMAAA==</data>
+                    <key>framebuffer-con2-type</key>
+                    <data>AAQAAA==</data>
                     <key>framebuffer-fbmem</key>
                     <data>AACQAA==</data>
                     <key>framebuffer-flags</key>
@@ -254,8 +254,6 @@
                     <data>AQAAAA==</data>
                     <key>framebuffer-stolenmem</key>
                     <data>AAAwAQ==</data>
-                    <key>rps-control</key>
-                    <data>AQAAAA==</data>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
                 <dict>
@@ -418,24 +416,6 @@
                     <key>Arch</key>
                     <string>x86_64</string>
                     <key>BundlePath</key>
-                    <string>EFICheckDisabler.kext</string>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string></string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>x86_64</string>
-                    <key>BundlePath</key>
                     <string>USBInjectAll.kext</string>
                     <key>Comment</key>
                     <string></string>
@@ -533,42 +513,6 @@
                     <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/VoodooPS2Trackpad</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>x86_64</string>
-                    <key>BundlePath</key>
-                    <string>RealtekCardReader.kext</string>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/RealtekCardReader</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>x86_64</string>
-                    <key>BundlePath</key>
-                    <string>RealtekCardReaderFriend.kext</string>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/RealtekCardReaderFriend</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -720,26 +664,6 @@
             </dict>
             <key>Force</key>
             <array>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>System/Library/Extensions/corecapture.kext</string>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Identifier</key>
-                    <string>com.apple.driver.corecapture</string>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/corecapture</string>
-                    <key>MaxKernel</key>
-                    <string>19.99.99</string>
-                    <key>MinKernel</key>
-                    <string>17.0.0</string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
                 <dict>
                     <key>Arch</key>
                     <string>Any</string>
@@ -966,8 +890,6 @@
             <dict>
                 <key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
                 <dict>
-                    <key>StartupMute</key>
-                    <data>AQ==</data>
                     <key>boot-args</key>
                     <string>darkwake=0 brcmfx-country=#a</string>
                     <key>csr-active-config</key>
@@ -1005,19 +927,19 @@
                 <key>MaxBIOSVersion</key>
                 <false/>
                 <key>MLB</key>
-                <string>C02752306GUF1171H</string>
+                <string>C07916600QX0000JA</string>
                 <key>ProcessorType</key>
                 <integer>0</integer>
                 <key>ROM</key>
-                <data>ESIzRFVm</data>
+                <data>ABbLESIz</data>
                 <key>SpoofVendor</key>
                 <false/>
                 <key>SystemMemoryStatus</key>
                 <string>Auto</string>
                 <key>SystemProductName</key>
-                <string>MacBookPro14,1</string>
+                <string>MacBookPro15,4</string>
                 <key>SystemSerialNumber</key>
-                <string>C02VW1VTHV29</string>
+                <string>C07YLUYML40Y</string>
                 <key>SystemUUID</key>
                 <string>AEA18B07-D5AA-4B00-A64E-A7E9A844A961</string>
             </dict>
@@ -1091,8 +1013,26 @@
             <true/>
             <key>Drivers</key>
             <array>
-                <string>OpenHfsPlus.efi</string>
-                <string>OpenRuntime.efi</string>
+                <dict>
+                    <key>Arguments</key>
+                    <string></string>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>OpenHfsPlus.efi</string>
+            	</dict>
+		<dict>
+                    <key>Arguments</key>
+                    <string></string>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>OpenRuntime.efi</string>
+		</dict>
             </array>
             <key>Input</key>
             <dict>
@@ -1139,6 +1079,8 @@
                 <false/>
                 <key>TextRenderer</key>
                 <string>BuiltinGraphics</string>
+                <key>UIScale</key>
+                <integer>0</integer>
                 <key>UgaPassThrough</key>
                 <false/>
             </dict>
@@ -1191,6 +1133,8 @@
                 <false/>
                 <key>ExitBootServicesDelay</key>
                 <integer>0</integer>
+                <key>ForceOcWriteFlash</key>
+                <false/>
                 <key>ForgeUefiSupport</key>
                 <false/>
                 <key>IgnoreInvalidFlexRatio</key>
@@ -1201,6 +1145,8 @@
                 <false/>
                 <key>RequestBootVarRouting</key>
                 <true/>
+                <key>ResizeGpuBars</key>
+                <integer>-1</integer>
                 <key>TscSyncTimeout</key>
                 <integer>0</integer>
                 <key>UnblockFsConnect</key>
