@@ -39,6 +39,9 @@
 
 ## Change Log:
 
+- 2021.11.05
+	- Update Kext & OC0.7.6.
+
 - 2021.07.17
 	- Update Kext & OC0.7.2 support SD Card Reader(not work in macOS Monterey).
 
