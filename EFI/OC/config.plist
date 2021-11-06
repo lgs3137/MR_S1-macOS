@@ -842,11 +842,11 @@
                 <key>BlacklistAppleUpdate</key>
                 <true/>
                 <key>DmgLoading</key>
-                <string>Any</string>
+                <string>Signed</string>
                 <key>EnablePassword</key>
                 <false/>
                 <key>ExposeSensitiveData</key>
-                <integer>6</integer>
+                <integer>3</integer>
                 <key>HaltLevel</key>
                 <integer>2147483648</integer>
                 <key>PasswordHash</key>
@@ -856,7 +856,7 @@
                 <key>ScanPolicy</key>
                 <integer>0</integer>
                 <key>SecureBootModel</key>
-                <string>Disabled</string>
+                <string>Default</string>
                 <key>Vault</key>
                 <string>Optional</string>
             </dict>
@@ -1022,8 +1022,8 @@
                     <true/>
                     <key>Path</key>
                     <string>OpenHfsPlus.efi</string>
-            	</dict>
-		<dict>
+                </dict>
+                <dict>
                     <key>Arguments</key>
                     <string></string>
                     <key>Comment</key>
@@ -1032,7 +1032,7 @@
                     <true/>
                     <key>Path</key>
                     <string>OpenRuntime.efi</string>
-		</dict>
+                </dict>
             </array>
             <key>Input</key>
             <dict>
